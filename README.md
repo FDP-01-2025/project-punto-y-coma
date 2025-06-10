@@ -7,7 +7,7 @@ Este proyecto es un juego interactivo en el cual el jugador ldebe tomar decision
 
 ## Equipo
 
-- **Nombre del equipo:** [Nombre del equipo]
+- **Nombre del equipo: PUNTO Y COMA** 
 
 ### Integrantes del equipo
 
