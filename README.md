@@ -3,10 +3,7 @@
 
 ## Descripción del Proyecto
 
-Breve descripción del juego, su propósito, cómo se juega y cualquier otro detalle importante que describa la idea general del proyecto.
-
-**Por ejemplo:**
-Este proyecto consiste en un juego de aventuras donde el jugador debe explorar un mundo virtual, recoger objetos, resolver acertijos y enfrentar enemigos. El juego utiliza estructuras de control como `if`, `switch`, y bucles `while` y `for` para generar interacciones dinámicas.
+Este proyecto es un juego interactivo en el cual el jugador ldebe tomar decisiones en distintas situaciones para avanzar de nivel. Cada nivel representa un nuevo desafío que el jugador debe superar eligiendo entre diferentes opciones. Al avanzar con éxito los niveles, el jugador desbloquea “recompensas”. El objetivo final es completar todos los niveles con éxito.
 
 ## Equipo
 
@@ -14,13 +11,13 @@ Este proyecto consiste en un juego de aventuras donde el jugador debe explorar u
 
 ### Integrantes del equipo
 
-1. **Nombre completo:** [Nombre del estudiante 1]  
-   **Carnet:** [Carnet del estudiante 1]
+1. **LUCIA GABRIELA NAVARRO MARIN**  
+   **Carnet:** 00109525
 
-2. **Nombre completo:** [Nombre del estudiante 2]  
+2. **HAZEL ANAHI MORALES GALVEZ**  
    **Carnet:** [Carnet del estudiante 2]
 
-3. **Nombre completo:** [Nombre del estudiante 3]  
+3. **GARY GEOVANNI SIBRIAN DERAS** 
    **Carnet:** [Carnet del estudiante 3]
 
 (Agregar más integrantes si es necesario)
