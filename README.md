@@ -36,5 +36,4 @@ g++ -o chcro chronocosmos.cpp
 
 5. Y ejecútalo:
 
-  ```bash
 ./chcro
