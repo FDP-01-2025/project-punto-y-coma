@@ -35,5 +35,6 @@ Este proyecto es un juego interactivo en el cual el jugador debe tomar decisione
 g++ -o chcro chronocosmos.cpp
 
 5. Y ejecútalo:
+
   ```bash
 ./chcro
