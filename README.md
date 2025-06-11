@@ -15,10 +15,11 @@ Este proyecto es un juego interactivo en el cual el jugador ldebe tomar decision
    **Carnet:** 00109525
 
 2. **HAZEL ANAHI MORALES GALVEZ**  
-   **Carnet:** [Carnet del estudiante 2]
+   **Carnet:** 00050125
+   
 
-3. **GARY GEOVANNI SIBRIAN DERAS** 
-   **Carnet:** [Carnet del estudiante 3]
+4. **GARY GEOVANNI SIBRIAN DERAS** 
+   **Carnet:** 00021925
 
 (Agregar más integrantes si es necesario)
 
