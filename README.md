@@ -31,9 +31,9 @@ Este proyecto es un juego interactivo en el cual el jugador debe tomar decisione
 3. Ábrelo en GitHub.
 
 4. Crea una nueva terminal:
-
+  ```bash
 g++ -o chcro chronocosmos.cpp
 
 5. Y ejecútalo:
-
+  ```bash
 ./chcro
