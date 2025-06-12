@@ -17,7 +17,7 @@ Este proyecto es un juego interactivo en el cual el jugador debe tomar decisione
    
 3. **GARY GEOVANNI SIBRIAN DERAS**: 00021925
 
-4. **Daniela Beatriz Ramos Paz**: 00113825
+4. **DANIELA BEATRIZ RAMOS PAZ **: 00113825
 
 
 ## Instrucciones de Ejecución
