@@ -27,7 +27,7 @@ const char premiosThornia[4][50] = {
 char premiosObtenidos[12][50];
 int cantidadPremios = 0;
 
-// Función para guardar los premios desbloqueados
+// Funcion para guardar los premios desbloqueados
 void agregarPremio(const char premio[50]) {
     if (cantidadPremios < 12) {
         
