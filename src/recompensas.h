@@ -11,16 +11,16 @@ const char premiosNerysia[4][50] = {
 
 const char premiosInfernum[4][50] = {
     "Llama de los Antiguos",
-    "Mapa del Núcleo",
+    "Mapa del Nucleo",
     "Roca Flotante",
-    "Escama de Dragón"
+    "Escama de Dragon"
 };
 
 const char premiosThornia[4][50] = {
     "Esencia Floral",
-    "Melodía Mental",
+    "Melodia Mental",
     "Extractor de Esporas",
-    "Raíz de Vida"
+    "Raiz de Vida"
 };
 
 // Array para almacenar todos los premios ganados
