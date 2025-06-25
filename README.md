@@ -26,7 +26,7 @@ Este proyecto es un juego interactivo en el cual el jugador debe tomar decisione
 
 1. Clona este repositorio en tu máquina local, en el escritorio:
    ```bash
-   git clone [https://github.com/FDP-01-2025/project-punto-y-coma.git]
+   git clone https://github.com/FDP-01-2025/project-punto-y-coma.git
 
 2. Busca el archivo en la carpeta previamente clonada bajo el nombre [project-punto-y-coma].
 
