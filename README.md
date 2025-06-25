@@ -34,8 +34,8 @@ Este proyecto es un juego interactivo en el cual el jugador debe tomar decisione
 
 4. Crea una nueva terminal:
    ```bash
-g++ -o chronocosmos main.cpp
+   g++ -o chronocosmos main.cpp
 
 5. Ejecutalo y ¡DIVIERTETE!
    ```bash
-./chronocosmos
+   ./chronocosmos.exe
