@@ -26,11 +26,11 @@ Este proyecto es un juego interactivo en el cual el jugador debe tomar decisione
 
 1. Clona este repositorio en tu máquina local, en el escritorio:
    ```bash
-   git clone [URL del repositorio]
+   git clone [https://github.com/FDP-01-2025/project-punto-y-coma.git]
 
-2. Busca el archivo en la carpeta previamente clonada bajo el nombre [project-loop-infinito].
+2. Busca el archivo en la carpeta previamente clonada bajo el nombre [project-punto-y-coma].
 
-3. Ábrelo en GitHub.
+3. Ábrelo en Visual Sutdio Code.
 
 4. Crea una nueva terminal:
    ```bash
