@@ -47,7 +47,7 @@ void introduccionJuego();
 //funcion para guardar proceso y hacer uso de archivos
 void guardarProgreso(string nombre, string aventuras, string premios);
 void leerProgreso();
-//funcion para usar matrices mostrando los universos a los que ha ido
+
 
 
 // Declaración de aventuras
