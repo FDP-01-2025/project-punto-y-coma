@@ -32,10 +32,10 @@ int main() {
                 mostrarPremios();
                 break;
             case 0:
-                cout << "¡Hasta pronto, " << nombreJugador << "!\n";
+                cout << "Hasta pronto, " << nombreJugador << "!!!!!\n";
                 break;
             default:
-                cout << "Opción inválida.\n";
+                cout << "Opcion invalida.\n";
         }
     } while (opcion != 0);
 
