@@ -101,7 +101,7 @@ Aventura thornia = {//declaramos el la aventura a la que vamos a añadirle datos
             {"Subes a la cima de la torre.", "No encuentras nada y regresas."},
             {"Investigas debajo de la torre acercandote a los susurros", "Encuentras entrada subterrania y un cofre."}
           },
-          "", 3 },
+          "Hacha en mal estado", 3 },
         { "       .",
           { {"      ", "      ."},
             {"      ", "     ."},
