@@ -80,40 +80,49 @@ Aventura infernum = {
     }
 };
 
-Aventura thornia = {
-    "Thornia (Mundo Apocaliptico)",
+Aventura thornia = {//declaramos el la aventura a la que vamos a añadirle datos
+    "thornia (El mundo olvidado)",//nombre de la aventura como en la estructura pide
     {
-        {"Lianas mutantes bloquean el camino.",
-            {{"Cortarlas", "Las vences pero te hieres."},
-             {"Quemarlas", "Las destruyes completamente."},
-             {"Buscar atajo", "Tomas ruta segura."}},
-        "Espina venenosa", 2},
-
-        {"Te ataca un enjambre toxico.",
-            {{"Defenderse", "Te defiendes pero quedas debil."},
-             {"Correr", "Escapas ileso."},
-             {"Usar humo", "Ahuyentas al enjambre."}},
-        "Antidoto especial", 1},
-
-        {"Encuentras un laboratorio abandonado.",
-            {{"Investigar", "Descubres recursos utiles."},
-             {"Ignorar", "No arriesgas nada."},
-             {"Destruir", "Evitas riesgos futuros."}},
-        "Crema mutante", 0},
-
-        {"Mutantes te rodean.",
-            {{"Negociar", "Te ayudan a cambio de recursos."},
-             {"Luchar", "Ganas pero pierdes equipo."},
-             {"Esconderse", "No te encuentran pero pierdes tiempo."}},
-        "Mascara mamalona", 0},
-
-        {"Planta reina te enfrenta.",
-            {{"Quemarla", "La destruyes con fuego."},
-             {"Envenenarla", "La debilitas y vences."},
-             {"Dialogar", "Logras un acuerdo de paz."}},
-        "Flor de cristal", 2}
-    }
+//situación 1 (nivel 1)
+        { "Despiertas en unas ruinas cubiertas de niebla y una estatua emite un sonido.", 
+//decisión y consecuencia
+          { {"Tocar la estatua", "Te paralisas unos segundos y pierdes tiempo."}, 
+//decisión y consecuencia
+            {"Tocar simbolo en forma de triangulo en la pared", "Aparece portal de luz ante ti."}, 
+//decisión y consecuencia
+            {"Caminar hacia la niebla", "Escuchas unos murmuros y te alejas."}
+          },
+//premio obtenido y opcion que te da ese premio
+          "Escudo abismal", 2 },
+//repetimos la estructura para los niveles siguientes
+//todo esto es un ejemplo
+        { "Sales de la cueva por el portal y encuentras una torre que susurra tus pensamientos sin sesar.",
+          { {"Te quedas en silencio.", "No logras soportar la voz de tus pensamientos y pierdes cordura."},
+            {"Subes a la cima de la torre.", "No encuentras nada y regresas."},
+            {"Investigas debajo de la torre acercandote a los susurros", "Encuentras entrada subterrania y un cofre."}
+          },
+          "", 3 },
+        { "       .",
+          { {"      ", "      ."},
+            {"      ", "     ."},
+            {"     ", "       ."}//todo lo de espacio trabajare
+          },
+          "   ", 3 },
+        { " .",
+          { {"   ", "."},
+            {" ", " ."},
+            {"   ", "  ."}
+          },
+          "    ", 3 },
+        { "Continuara.",
+          { {"Pelea o algo", "sigilo."},
+            {"atributos", "ganas un arma ."},
+            {"Escapar con un artefacto robado", "Obtienes una maldicion."}
+          },
+          "maldicion", 0 }// no le pongan atencion al ultimo lo puse por poner falta plantear
+}
 };
+
 
 // Funciones
 void agregarPremio(string premio) {
