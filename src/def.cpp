@@ -45,10 +45,20 @@ Aventura nerysia = {
         "PREMIO", 2}
     }
 };
+
 //aventura dos
 Aventura infernum = {
-   
+    "Infermun (Mundo de Fuego)",
+    {
+        {"Nivel 1 - Llanuras de ceniza:\nEl suelo tiembla bajo tus pies, unos lagartos ígneos han comenzado a atacar caravanas de comerciantes de roca volcánica.",
+             {{"Tratas de hablar con los lagartos", "Los lagartos no entienden y se alteran aún más."},
+              {"Les arrojas agua congelada", "Los lagartos se enfurecen y comienzan atacar a todos."},
+              {"Los distraes con una antorcha brillante", "Los lagartos se confunden con la luz y se quedan quietos, salvando a los comerciantes."}}
+        "PREMIO", 2}
+    }           
 };
+
+
 //aventura tres
 Aventura thornia = {
     
