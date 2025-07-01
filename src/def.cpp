@@ -96,24 +96,24 @@ Aventura thornia = {//declaramos el la aventura a la que vamos a añadirle datos
           "Escudo abismal", 2 },
 //repetimos la estructura para los niveles siguientes
 //todo esto es un ejemplo
-        { "Sales de la cueva por el portal y encuentras una torre que susurra tus pensamientos sin sesar.",
-          { {"Te quedas en silencio.", "No logras soportar la voz de tus pensamientos y pierdes cordura."},
-            {"Subes a la cima de la torre.", "No encuentras nada y regresas."},
-            {"Investigas debajo de la torre acercandote a los susurros", "Encuentras entrada subterrania y un cofre."}
+        { "Sales de la cueva por el portal y encuentras una torre que susurra tus pensamientos sin sesar. ",
+          { {"Te quedas en silencio. ", "No logras soportar la voz de tus pensamientos y pierdes cordura. "},
+            {"Subes a la cima de la torre. ", "No encuentras nada y regresas. "},
+            {"Investigas debajo de la torre acercandote a los susurros. ", "Encuentras entrada subterrania y un cofre. "}
           },
           "Hacha en mal estado", 3 },
-        { "       .",
-          { {"      ", "      ."},
-            {"      ", "     ."},
-            {"     ", "       ."}//todo lo de espacio trabajare
+        { "Al descender encuentras una sala con 3 estatuas encapuchadas con diferentes simbolos.",
+          { {"Tocar primer estatua con un simbolo cuadrado. ", "Activas una trampa y no escapaste a tiempo. "},
+            {"Tocar segunda estatua con un simbolo circular. ", "Aparece una neblina y terminas inconciente. "},
+            {"Tocar tercera estatua con simbolo triangular. ", "La estatua se desplaza y abre un camino atras de ella y te llevas su capucha. "}
           },
-          "   ", 3 },
-        { " .",
-          { {"   ", "."},
-            {" ", " ."},
-            {"   ", "  ."}
+          "Capucha vieja. ", 3 },
+        { "Sigues el camino y te encuentras una sala oscura llena de armas con escombros y puerta con simbolos en las paredes. ",
+          { {"Investiga los escombros. ", "Encuentras un libro en otro idioma. "},
+            {"Fuerzas la puerta con el escudo. ", "No logras nada. "},
+            {"Investigas los simbolos en las paredes. ", "Reaccionan con la capucha y se abre ante ti la puerta. "}
           },
-          "    ", 3 },
+          "Libro desconocido. ", 3 },
         { "Continuara.",
           { {"Pelea o algo", "sigilo."},
             {"atributos", "ganas un arma ."},
