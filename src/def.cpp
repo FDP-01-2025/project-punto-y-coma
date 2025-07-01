@@ -10,158 +10,98 @@ string nombreJugador;
 
 // Aventuras definidas
 
+//aventura uno
 Aventura nerysia = {
     "Nerysia (Mundo de Agua)",
     {
-        {"Los peces globo atacan la aldea.", 
-            {{"Usar espinas", "Asustas a los peces y se van."},
-             {"Usar espada", "Te lastimas pero logras defenderte."},
-             {"Usar tinta", "Los confundes y huyen asustados."}},
-        "Perla brillante", 2},
+        {"SITUACION.", 
+            {{"OPCION", "CONSECUENCIA."},
+             {"OPCION", "CONSECUENCIA."},
+             {"OPCION", "CONSECUENCIA"}},
+        "PREMIO", 2},//este dos representa la opcion correcta del 1 al 3
 
-        {"Un tiburon bloquea el paso.",
-            {{"Calmarlo", "Logras calmarlo y se hace tu aliado."},
-             {"Huir", "Escapas pero pierdes provisiones."},
-             {"Pelear", "Lo vences pero quedas herido."}},
-        "Cola de sirena", 0},
+        {"SITUACION.",
+            {{"OPCION", "CONSECUENCIA."},
+             {"OPCION", "CONSECUENCIA."},
+             {"OPCION", "CONSECUENCIA."}},
+        "PREMIO", 0},
 
-        {"Corrientes peligrosas te arrastran.",
-            {{"Nadar contra corriente", "Gastas energia pero sobrevives."},
-             {"Buscar refugio", "Encuentras una cueva segura."},
-             {"Dejarse llevar", "Te alejas demasiado del objetivo."}},
-        "Concha magica", 1},
+        {"SITUACION.",
+            {{"OPCION", "CONSECUENCIA."},
+             {"OPCION", "CONSECUENCIA."},
+             {"OPCION", "CONSECUENCIA."}},
+        "PREMIO", 1},
 
-        {"Encuentras un cofre cerrado.",
-            {{"Forzarlo", "Se rompe y pierdes parte del tesoro."},
-             {"Buscar la llave", "Encuentras la llave y abres sin daño."},
-             {"Ignorarlo", "Te pierdes el tesoro pero sigues sano."}},
-        "Perla negra", 1},
+        {"SITUACION.",
+            {{"OPCION", "CONSECUENCIA."},
+             {"OPCION", "CONSECUENCIA."},
+             {"OPCION", "CONSECUENCIA."}},
+        "PREMIO", 1},
 
-        {"Una gran medusa aparece.",
-            {{"Atacar", "La derrotas con dificultad."},
-             {"Esquivar", "Logras esquivarla ileso."},
-             {"Dialogar", "Sorprendentemente te ayuda."}},
-        "Tridente marino", 2}
+        {"SITUACION.",
+            {{"OPCION", "CONSECUENCIA."},
+             {"OPCION", "CONSECUENCIA."},
+             {"OPCION", "CONSECUENCIA."}},
+        "PREMIO", 2}
     }
 };
-
+//aventura dos
 Aventura infernum = {
-    "Infernum (Mundo de Fuego)",
-    {
-        {"El volcan comienza a rugir.",
-            {{"Escalar", "Subes rapido pero te quemas."},
-             {"Esperar", "El volcan se calma un poco."},
-             {"Buscar ruta alterna", "Encuentras un camino seguro."}},
-        "Gema ardiente", 2},
-
-        {"Un golem de lava te ataca.",
-            {{"Luchar", "Ganas pero te quemas."},
-             {"Usar agua", "Lo derrotas sin daño."},
-             {"Huir", "Escapas con heridas leves."}},
-        "Escama bonita", 1},
-
-        {"Rocas incandescentes bloquean el paso.",
-            {{"Saltar", "Cruzas con riesgo alto."},
-             {"Romperlas", "Requiere fuerza y tiempo."},
-             {"Rodear", "Tomas camino largo pero seguro."}},
-        "Anillo volcanico", 2},
-
-        {"Encuentras un lago de lava.",
-            {{"Construir puente", "Tarda pero cruzas bien."},
-             {"Volar sobre el", "Cruzas rapido con magia."},
-             {"Atravesar directo", "Te quemas gravemente."}},
-        "Pluma fenix", 1},
-
-        {"El coloso ardiente aparece.",
-            {{"Atacar frontal", "Lo vences con gran esfuerzo."},
-             {"Debilitar primero", "Lo haces vulnerable y vences."},
-             {"Huir", "Te salvas pero pierdes mucho."}},
-        "Corona brillante", 1}
-    }
+   
 };
-
+//aventura tres
 Aventura thornia = {
-    "Thornia (Mundo Apocaliptico)",
-    {
-        {"Lianas mutantes bloquean el camino.",
-            {{"Cortarlas", "Las vences pero te hieres."},
-             {"Quemarlas", "Las destruyes completamente."},
-             {"Buscar atajo", "Tomas ruta segura."}},
-        "Espina venenosa", 2},
-
-        {"Te ataca un enjambre toxico.",
-            {{"Defenderse", "Te defiendes pero quedas debil."},
-             {"Correr", "Escapas ileso."},
-             {"Usar humo", "Ahuyentas al enjambre."}},
-        "Antidoto especial", 1},
-
-        {"Encuentras un laboratorio abandonado.",
-            {{"Investigar", "Descubres recursos utiles."},
-             {"Ignorar", "No arriesgas nada."},
-             {"Destruir", "Evitas riesgos futuros."}},
-        "Crema mutante", 0},
-
-        {"Mutantes te rodean.",
-            {{"Negociar", "Te ayudan a cambio de recursos."},
-             {"Luchar", "Ganas pero pierdes equipo."},
-             {"Esconderse", "No te encuentran pero pierdes tiempo."}},
-        "Mascara mamalona", 0},
-
-        {"Planta reina te enfrenta.",
-            {{"Quemarla", "La destruyes con fuego."},
-             {"Envenenarla", "La debilitas y vences."},
-             {"Dialogar", "Logras un acuerdo de paz."}},
-        "Flor de cristal", 2}
-    }
+    
 };
 
 // Funciones
+//agrega premio segun gane
 void agregarPremio(string premio) {
-    if (cantidadPremios < 20) {
-        premiosJugador[cantidadPremios++] = premio;
+    if (cantidadPremios < 20) {//si la cantidad es menor a 20 premios
+        premiosJugador[cantidadPremios++] = premio; //se guarda en el arreglo sumando los premios
     }
 }
-
+//muestra los premios que ha obtenido
 void mostrarPremios() {
     cout << "\n--- Premios obtenidos ---\n";
-    if (cantidadPremios == 0) {
+    if (cantidadPremios == 0) {//si la cantidad de premios es igual a cero muestra el mensaje
         cout << "No tienes premios aún.\n";
     } else {
-        for (int i = 0; i < cantidadPremios; i++) {
+        for (int i = 0; i < cantidadPremios; i++) { //si tiene premio entonces se recorre el arreglo y se muestran los premio ganados
             cout << i + 1 << ". " << premiosJugador[i] << "\n";
         }
     }
     cout << endl;
 }
-
+//jugar nivel de aventura
 void jugarNivel(const Nivel& nivel) {
     cout << "\nSituacion: " << nivel.situacion << "\n";
-    for (int i = 0; i < 3; i++) {
-        cout << i + 1 << ". " << nivel.decisiones[i].texto << "\n";
+    for (int i = 0; i < 3; i++) { //si los niveles son menores a 3
+        cout << i + 1 << ". " << nivel.decisiones[i].texto << "\n"; //manda el arreglo de decisiones
     }
 
-    int opcion;
+    int opcion;//declaramos un entero para la opcion de las decisiones
     do {
         cout << "Elige una opcion: ";
         cin >> opcion;
-        if (opcion < 1 || opcion > 3) {
+        if (opcion < 1 || opcion > 3) { //una condicional que elija solamente entre la opcion  1 a 3
             cout << "Opcion invalida. Intenta de nuevo.\n";
         }
-    } while (opcion < 1 || opcion > 3);
+    } while (opcion < 1 || opcion > 3); //todo eso lo hara mientras sean esas opciones
 
-    cout << "\n" << nivel.decisiones[opcion - 1].consecuencia << "\n";
+    cout << "\n" << nivel.decisiones[opcion - 1].consecuencia << "\n"; //mostramos el arreglo de opciones -1 y la consecuencia que es correspndiente
 
-    if ((opcion - 1) == nivel.opcionGanadora) {
+    if ((opcion - 1) == nivel.opcionGanadora) { //si la opcion que eligio es igual a la opcion ganadora muestra el mensaje
         cout << "¡Ganaste el premio: " << nivel.premio << "!\n";
-        agregarPremio(nivel.premio);
+        agregarPremio(nivel.premio); // agregamos premio al arreglo
     } else {
         cout << "Sobreviviste, pero sin premio.\n";
     }
 }
-
+//funcion de jugar aventura 
 void jugarAventura(const Aventura& aventura) {
     cout << "\n--- Bienvenido a " << aventura.nombre << " ---\n";
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 5; i++) { //recorremos el arreglo de la funcion 
         cout << "\n--- Nivel " << i + 1 << " ---";
         jugarNivel(aventura.niveles[i]);
     }
