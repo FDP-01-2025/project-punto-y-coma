@@ -48,36 +48,36 @@ Aventura nerysia = {
 
 //aventura dos
 Aventura infernum = {
-    "Infermun (Mundo de Fuego)",
+    "Infernum (Mundo de Fuego)",
     {
-        {"Nivel 1 - Llanuras de ceniza: El suelo tiembla bajo tus pies, unos lagartos ígneos han comenzado a atacar caravanas de comerciantes de roca volcánica. ",
+        {"Nivel 1 - Llanuras de ceniza: El suelo tiembla bajo tus pies, unos lagartos ígneos han comenzado a atacar caravanas de comerciantes de roca volcánica. ¿Que haces para salvar a los comerciantes?",
              {{"Tratas de hablar con los lagartos", "Los lagartos no entienden y se alteran aún más."},
               {"Les arrojas agua congelada", "Los lagartos se enfurecen y comienzan atacar a todos."},
               {"Los distraes con una antorcha brillante", "Los lagartos se confunden con la luz y se quedan quietos, salvando a los comerciantes."}},
         "Espada de lava", 2},
 
-        {"Nivel 2 - Cañón del Trueno Ardiente: Encuentras una grieta con vapor envenenado que está afectando a los pájaros de lava. Algunos te rodean confundidos.",
+        {"Nivel 2 - Cañón del Trueno Ardiente: Encuentras una grieta con vapor envenenado que está afectando a los pájaros de lava. Algunos te rodean confundidos. ¿Que decision tomas para ayudar a los pajaros?",
              {{"Tapa la grieta con rocas", "La presión al taparla provoca una explosión y todos mueren." },
              {"Guias a los pájaros fuera del humo", "Salvas a los pajaros y te agradecen con un pan para recargar energias."},
              {"Los enfrentas, pensando que son hostiles", "Los pajaros te atacan."}},
         "corazon de fuego encantado", 1},
 
-        {"Nivel 3 - Volcán Dormido: Subes a un volcán para investigar su energía. Descubres una grieta que lleva a una caverna secreta, pero está protegida por golems de magma.",
+        {"Nivel 3 - Volcán Dormido: Subes a un volcán para investigar su energía. Descubres una grieta que lleva a una caverna secreta, pero está protegida por golems de magma. ¿Como accedes? a la caverna secreta?",
              {{"Imitas los movimientos de los golems", "Te confunden con uno de ellos y te dejan pasar."},
-             {"Te camuflas con barro volcánico", "El barro te quema y mueres"},
+             {"Te camuflas con barro volcánico", "El barro te quema y mueres."},
              { "Esperas a que se duerman para pasar", "Te duermes y los golems te atrapan"}},
         "Cetro de magma", 0}, 
 
-        {"Nivel 4 - Río de Lava Eterna: Para cruzar al siguiente territorio, debes atravesar un río de lava sobre plataformas que se derriten con el tiempo.",
-             {{"Un caparazón de escarabajo ignífugo", "Te proteges de la vala y cruzas sin problemas"},
-             {"Saltar lo más rapido posible", "Te quemas porque no alcanzas a saltar"},
+        {"Nivel 4 - Río de Lava Eterna: Para cruzar al siguiente territorio, debes atravesar un río de lava sobre plataformas que se derriten con el tiempo. ¿Como logras cruzar el rio?",
+             {{"Un caparazón de escarabajo ignífugo", "Te proteges de la lava y cruzas sin problemas"},
+             {"Saltar lo más rapido posible", "Te quemas porque no alcanzas a saltar."},
              {"Usar un fragmento de hielo antiguo para congelar partes de la lava", "El hielo se derrite muy rapido y caes al rio"}},
        "Escudo de roca volcanica", 0},
 
-       {"Nivel 5 - Núcleo del Coloso Ardiente: En lo más profundo del mundo, te enfrentas al Coloso Ardiente, una criatura que parece hecha del núcleo del planeta. Está enloquecido.",
+       {"Nivel 5 - Núcleo del Coloso Ardiente: En lo más profundo del mundo, te enfrentas al Coloso Ardiente, una criatura que parece hecha del núcleo del planeta. Está enloquecido. ¿Como derrotas al coloso?",
              {{"Usas un mineral especial que absorbe calor", "El mineral es muy debil y se derite."},
               {"Le haces recordar quién era antes con un artefacto antiguo", "El coloso se conmueve y se duerme en paz."},
-              {"Intentas luchar contra el coloso", "El coloso es demasiado fuerte y t aplasta"}},
+              {"Intentas luchar contra el coloso", "El coloso es demasiado fuerte y te aplasta"}},
         "Amuleto del coloso", 1},
      }                  
 };
