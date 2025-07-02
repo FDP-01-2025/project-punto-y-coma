@@ -87,7 +87,7 @@ El juego es completamente interactivo desde la consola. Se centra en decisiones 
 
 - Lenguaje: C++
 
-- Librerías: <iostream>, <fstream>
+- Librerías: `<iostream>`, `<fstream>`
 
 - No requiere librerías externas adicionales.
 
