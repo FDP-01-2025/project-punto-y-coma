@@ -42,7 +42,7 @@ Aventura nerysia = {
             {{"OPCION", "CONSECUENCIA."},
              {"OPCION", "CONSECUENCIA."},
              {"OPCION", "CONSECUENCIA."}},
-        "PREMIO", 2}
+        "PREMIO", 2},
     }
 };
 
@@ -53,8 +53,14 @@ Aventura infernum = {
         {"Nivel 1 - Llanuras de ceniza: El suelo tiembla bajo tus pies, unos lagartos ígneos han comenzado a atacar caravanas de comerciantes de roca volcánica.",
              {{"Tratas de hablar con los lagartos", "Los lagartos no entienden y se alteran aún más."},
               {"Les arrojas agua congelada", "Los lagartos se enfurecen y comienzan atacar a todos."},
-              {"Los distraes con una antorcha brillante", "Los lagartos se confunden con la luz y se quedan quietos, salvando a los comerciantes."}}
-        "Espada de lava", 2}
+              {"Los distraes con una antorcha brillante", "Los lagartos se confunden con la luz y se quedan quietos, salvando a los comerciantes."}},
+        "Espada de lava", 2},
+
+        {"Nivel 2 - Cañón del Trueno Ardiente: Encuentras una grieta con vapor envenenado que está afectando a los pájaros de lava. Algunos te rodean confundidos.",
+            {{"Tapa la grieta con rocas", "La presión al taparla provoca una explosión y todos mueren." },
+             {"Guias a los pájaros fuera del humo" "Salvas a los pajaros y te agradecen con un pan para recargar energias."},
+             {"Los enfrentas, pensando que son hostiles" "Los pajaros te atacan."}},
+        "corazon de fuego encantado", 1},
     }           
 };
 
