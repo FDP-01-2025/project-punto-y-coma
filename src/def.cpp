@@ -50,7 +50,7 @@ Aventura nerysia = {
 Aventura infernum = {
     "Infermun (Mundo de Fuego)",
     {
-        {"Nivel 1 - Llanuras de ceniza: El suelo tiembla bajo tus pies, unos lagartos ígneos han comenzado a atacar caravanas de comerciantes de roca volcánica.",
+        {"Nivel 1 - Llanuras de ceniza: El suelo tiembla bajo tus pies, unos lagartos ígneos han comenzado a atacar caravanas de comerciantes de roca volcánica. ",
              {{"Tratas de hablar con los lagartos", "Los lagartos no entienden y se alteran aún más."},
               {"Les arrojas agua congelada", "Los lagartos se enfurecen y comienzan atacar a todos."},
               {"Los distraes con una antorcha brillante", "Los lagartos se confunden con la luz y se quedan quietos, salvando a los comerciantes."}},
@@ -61,6 +61,12 @@ Aventura infernum = {
              {"Guias a los pájaros fuera del humo", "Salvas a los pajaros y te agradecen con un pan para recargar energias."},
              {"Los enfrentas, pensando que son hostiles", "Los pajaros te atacan."}},
         "corazon de fuego encantado", 1},
+
+        {"Nivel 3 - Volcán Dormido: Subes a un volcán para investigar su energía. Descubres una grieta que lleva a una caverna secreta, pero está protegida por golems de magma.",
+            {{"Imitas los movimientos de los golems", "Te confunden con uno de ellos y te dejan pasar."},
+             {"Te camuflas con barro volcánico", "El barro te quema y mueres"},
+             { "Esperas a que se duerman para pasar", "Te duermes y los golems te atrapan"}},
+        "Cetro de roca volcanica", 0}     
     }           
 };
 
