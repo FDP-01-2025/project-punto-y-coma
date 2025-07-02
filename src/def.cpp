@@ -66,13 +66,19 @@ Aventura infernum = {
              {{"Imitas los movimientos de los golems", "Te confunden con uno de ellos y te dejan pasar."},
              {"Te camuflas con barro volcánico", "El barro te quema y mueres"},
              { "Esperas a que se duerman para pasar", "Te duermes y los golems te atrapan"}},
-        "Cetro de magma", 0} 
+        "Cetro de magma", 0}, 
 
         {"Nivel 4 - Río de Lava Eterna: Para cruzar al siguiente territorio, debes atravesar un río de lava sobre plataformas que se derriten con el tiempo.",
              {{"Un caparazón de escarabajo ignífugo", "Te proteges de la vala y cruzas sin problemas"},
              {"Saltar lo más rapido posible", "Te quemas porque no alcanzas a saltar"},
              {"Usar un fragmento de hielo antiguo para congelar partes de la lava", "El hielo se derrite muy rapido y caes al rio"}},
-       "Escudo de roca volcanica", 0;}
+       "Escudo de roca volcanica", 0},
+
+       {"Nivel 5 - Núcleo del Coloso Ardiente: En lo más profundo del mundo, te enfrentas al Coloso Ardiente, una criatura que parece hecha del núcleo del planeta. Está enloquecido.",
+             {{"Usas un mineral especial que absorbe calor", "El mineral es muy debil y se derite."},
+              {"Le haces recordar quién era antes con un artefacto antiguo", "El coloso se conmueve y se duerme en paz."},
+              {"Intentas luchar contra el coloso", "El coloso es demasiado fuerte y t aplasta"}},
+        "Amuleto del coloso", 1},
      }                  
 };
 
