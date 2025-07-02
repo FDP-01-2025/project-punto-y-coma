@@ -22,7 +22,7 @@ por diferentes caminos.
 - El jugador ingresa su nombre y selecciona una aventura.
 - Cada aventura contiene **5 niveles**, cada uno con una situación crítica.
 - En cada nivel se presentan **3 opciones** con consecuencias diferentes.
-- Si elige la opción correcta, gana un **premio**; si no, sobrevive sin premio.
+- Si elige la opción correcta, gana un **premio**.
 - Los premios obtenidos y aventuras jugadas se almacenan para que puedan revisarse en cualquier momento.
 - Las aventuras solo pueden jugarse **una vez**.
 
@@ -72,7 +72,7 @@ El juego es completamente interactivo desde la consola. Se centra en decisiones 
 
 - Archivo principal (main.cpp): controla el juego.
 
-### ⚙️ Consideraciones técnicas
+# ⚙️ Consideraciones técnicas
 
 **🛠️ Dependencias**
 
@@ -102,11 +102,11 @@ El juego es completamente interactivo desde la consola. Se centra en decisiones 
    ```bash
    ./chronocosmos.exe
 
-## Equipo
+## 🔨 Equipo
 
 - **Nombre del equipo: PUNTO Y COMA** 
 
-### Integrantes del equipo
+### ✏️ Integrantes del equipo
 
 1. **LUCIA GABRIELA NAVARRO MARIN**: 00109525
 
