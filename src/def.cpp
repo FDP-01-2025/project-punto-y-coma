@@ -152,6 +152,73 @@ void mostrarPremios() {
     }
     cout << endl;
 }
+//guardar progresoo
+void guardarProgreso() {
+    ofstream archivo("src./progreso.txt");
+    if (archivo.is_open()) {
+        archivo << nombreJugador << endl;
+        
+        // Contar cuántas aventuras jugó
+        int totalAventuras = 0;
+        for (int i = 0; i < 3; i++) {
+            if (aventurasJugadas[i]) {
+                totalAventuras++;
+            }
+        }
+        archivo << totalAventuras << endl;
+
+        // Guardar nombres de aventuras jugadas
+        if (aventurasJugadas[0]) archivo << "Nerysia (Mundo de Agua)" << endl;
+        if (aventurasJugadas[1]) archivo << "Infernum (Mundo de Fuego)" << endl;
+        if (aventurasJugadas[2]) archivo << "thornia (El mundo olvidado)" << endl;
+
+        // Guardar premios
+        archivo << cantidadPremios << endl;
+        for (int i = 0; i < cantidadPremios; i++) {
+            archivo << premiosJugador[i] << endl;
+        }
+
+        archivo.close();
+        cout << "\nProgreso guardado exitosamente.\n";
+    } else {
+        cout << "No se pudo abrir el archivo para guardar.\n";
+    }
+}//mostrar progreso
+void mostrarProgreso() {
+    ifstream archivo("src/progreso.txt");
+    if (archivo.is_open()) {
+        string linea;
+        getline(archivo, nombreJugador);
+        cout << "\nNombre: " << nombreJugador << endl;
+
+        getline(archivo, linea);
+        int aventuras = stoi(linea);
+        cout << "Aventuras jugadas: " << aventuras << endl;
+
+        cout << "\n--- Aventuras jugadas ---\n";
+        for (int i = 0; i < aventuras; i++) {
+            getline(archivo, linea);
+            cout << i + 1 << ". " << linea << endl;
+        }
+
+        getline(archivo, linea);
+        cantidadPremios = stoi(linea);
+
+        cout << "\n--- Premios obtenidos ---\n";
+        if (cantidadPremios == 0) {
+            cout << "No tienes premios aún.\n";
+        } else {
+            for (int i = 0; i < cantidadPremios; i++) {
+                getline(archivo, premiosJugador[i]);
+                cout << i + 1 << ". " << premiosJugador[i] << endl;
+            }
+        }
+
+        archivo.close();
+    } else {
+        cout << "No se pudo abrir el archivo para leer el progreso.\n";
+    }
+}
 //jugar nivel de aventura
 void jugarNivel(const Nivel& nivel) {
     cout << "\nSituacion: " << nivel.situacion << "\n";
