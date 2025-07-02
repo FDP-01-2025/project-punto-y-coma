@@ -45,9 +45,9 @@ Aventura nerysia = {
         "PREMIO", 2},
     }
 };
-
 //aventura dos
 Aventura infernum = {
+<<<<<<< HEAD
     "Infermun (Mundo de Fuego)",
     {
         {"Nivel 1 - Llanuras de ceniza: El suelo tiembla bajo tus pies, unos lagartos ígneos han comenzado a atacar caravanas de comerciantes de roca volcánica.",
@@ -62,14 +62,11 @@ Aventura infernum = {
              {"Los enfrentas, pensando que son hostiles" "Los pajaros te atacan."}},
         "corazon de fuego encantado", 1},
     }           
+=======
+   
+>>>>>>> db64df31ac79f6928eb8bbad8dddad4b2610a725
 };
 
-<<<<<<< HEAD
-
-//aventura tres
-Aventura thornia = {
-    
-=======
 Aventura thornia = {//declaramos el la aventura a la que vamos a añadirle datos
     "thornia (El mundo olvidado)",//nombre de la aventura como en la estructura pide
     {
@@ -91,27 +88,26 @@ Aventura thornia = {//declaramos el la aventura a la que vamos a añadirle datos
             {"Subes a la cima de la torre. ", "No encuentras nada y regresas. "},
             {"Investigas debajo de la torre acercandote a los susurros. ", "Encuentras entrada subterrania y un cofre. "}
           },
-          "Hacha en mal estado", 3 },
+          "Hacha en mal estado", 2 },
         { "Al descender encuentras una sala con 3 estatuas encapuchadas con diferentes simbolos.",
           { {"Tocar primer estatua con un simbolo cuadrado. ", "Activas una trampa y no escapaste a tiempo. "},
             {"Tocar segunda estatua con un simbolo circular. ", "Aparece una neblina y terminas inconciente. "},
             {"Tocar tercera estatua con simbolo triangular. ", "La estatua se desplaza y abre un camino atras de ella y te llevas su capucha. "}
           },
-          "Capucha vieja. ", 3 },
-        { "Sigues el camino y te encuentras una sala oscura llena de armas con escombros y puerta con simbolos en las paredes. ",
+          "Capucha vieja. ", 2 },
+        { "Sigues el camino y te encuentras una sala oscura llena de armas con escombros y puertas con simbolos en las paredes. ",
           { {"Investiga los escombros. ", "Encuentras un libro en otro idioma. "},
             {"Fuerzas la puerta con el escudo. ", "No logras nada. "},
             {"Investigas los simbolos en las paredes. ", "Reaccionan con la capucha y se abre ante ti la puerta. "}
           },
-          "Libro desconocido. ", 3 },
-        { "Continuara.",
-          { {"Pelea o algo", "sigilo."},
+          "Libro desconocido. ", 2 },
+        { "Encuentras una mazmorra y te enfrentas al Portador del Olvido y la zona esta . ",
+          { {"Atacar con tu hacha. ", "sigilo. "},
             {"atributos", "ganas un arma ."},
             {"Escapar con un artefacto robado", "Obtienes una maldicion."}
           },
           "maldicion", 0 }// no le pongan atencion al ultimo lo puse por poner falta plantear
 }
->>>>>>> c7ed183db97085e7cf0c39188786d39b231d1ff4
 };
 
 
