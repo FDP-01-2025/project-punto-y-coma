@@ -18,6 +18,15 @@ ChronoCosmos es un juego narrativo de aventuras que transporta al jugador a univ
 El jugador debe restaurar el equilibrio de cada universo tomando decisiones clave que lo llevarán 
 por diferentes caminos.
 
+## 📸 Recursos visuales
+
+- 🌊 **Nerysia (Mundo de Agua)**: `resources/nerysia1.png`
+- 🔥 **Infernum (Mundo de Fuego)**: `resources/infernum2.jpg`
+- ⏳ **Thornia (Mundo olvidado)**: `resources/thornia1.png`
+
+Estas imágenes son referencias conceptuales para imaginar los mundos mientras juegas.
+
+
 ## ⚔️ Mecánica principal
 - El jugador ingresa su nombre y selecciona una aventura.
 - Cada aventura contiene **5 niveles**, cada uno con una situación crítica.
