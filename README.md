@@ -20,7 +20,7 @@ por diferentes caminos.
 
 ## 📸 Recursos visuales
 
-- 🌊 **Nerysia (Mundo de Agua)**: ![Nerysia](resources/nerysia.png)
+- 🌊 **Nerysia (Mundo de Agua)**: ![Nerysia](resources/nerysia1.png)
 - 🔥 **Infernum (Mundo de Fuego)**: `resources/infernum2.jpg`
 - ⏳ **Thornia (Mundo olvidado)**: `resources/thornia1.png`
 
