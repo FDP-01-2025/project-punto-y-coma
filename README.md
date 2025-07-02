@@ -21,8 +21,8 @@ por diferentes caminos.
 ## 📸 Recursos visuales
 
 - 🌊 **Nerysia (Mundo de Agua)**: ![Nerysia](resources/nerysia1.png)
-- 🔥 **Infernum (Mundo de Fuego)**: `resources/infernum2.jpg`
-- ⏳ **Thornia (Mundo olvidado)**: `resources/thornia1.png`
+- 🔥 **Infernum (Mundo de Fuego)**: ![Infernum](resources/infernum2.jpg)
+- ⏳ **Thornia (Mundo olvidado)**: ![Thornia](resources/thornia1.png)
 
 Estas imágenes son referencias conceptuales para imaginar los mundos mientras juegas.
 
