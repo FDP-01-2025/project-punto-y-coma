@@ -35,6 +35,14 @@ Estas imágenes son referencias conceptuales para imaginar los mundos mientras j
 - Los premios obtenidos y aventuras jugadas se almacenan para que puedan revisarse en cualquier momento.
 - Las aventuras solo pueden jugarse **una vez**.
 
+## 📄 Reglas del juego
+- Solo **una persona puede jugar**
+- Debes elegir un mundo para iniciar la aventura **no puedes volver a jugar la misma aventura dos veces**
+- Cada aventura tiene **5 niveles** 
+- Cada nivel presenta una situación en la que solo tienes **3 opciones** disponibles, deberás escoger la mejor
+- La opción que eligas puede llevarte a un destino distinto **escoge con sabiduría**
+- Al finalizar cada aventura **puedes revisar** los mundos visitados y todo tu progreso, asi como los premios que has ganado hasta el momento
+
 ## 🎮 Jugabilidad
 El juego es completamente interactivo desde la consola. Se centra en decisiones narrativas, fomentando la exploración y el razonamiento.
 
