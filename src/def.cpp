@@ -57,17 +57,23 @@ Aventura infernum = {
         "Espada de lava", 2},
 
         {"Nivel 2 - Cañón del Trueno Ardiente: Encuentras una grieta con vapor envenenado que está afectando a los pájaros de lava. Algunos te rodean confundidos.",
-            {{"Tapa la grieta con rocas", "La presión al taparla provoca una explosión y todos mueren." },
+             {{"Tapa la grieta con rocas", "La presión al taparla provoca una explosión y todos mueren." },
              {"Guias a los pájaros fuera del humo", "Salvas a los pajaros y te agradecen con un pan para recargar energias."},
              {"Los enfrentas, pensando que son hostiles", "Los pajaros te atacan."}},
         "corazon de fuego encantado", 1},
 
         {"Nivel 3 - Volcán Dormido: Subes a un volcán para investigar su energía. Descubres una grieta que lleva a una caverna secreta, pero está protegida por golems de magma.",
-            {{"Imitas los movimientos de los golems", "Te confunden con uno de ellos y te dejan pasar."},
+             {{"Imitas los movimientos de los golems", "Te confunden con uno de ellos y te dejan pasar."},
              {"Te camuflas con barro volcánico", "El barro te quema y mueres"},
              { "Esperas a que se duerman para pasar", "Te duermes y los golems te atrapan"}},
-        "Cetro de roca volcanica", 0}     
-    }           
+        "Cetro de magma", 0} 
+
+        {"Nivel 4 - Río de Lava Eterna: Para cruzar al siguiente territorio, debes atravesar un río de lava sobre plataformas que se derriten con el tiempo.",
+             {{"Un caparazón de escarabajo ignífugo", "Te proteges de la vala y cruzas sin problemas"},
+             {"Saltar lo más rapido posible", "Te quemas porque no alcanzas a saltar"},
+             {"Usar un fragmento de hielo antiguo para congelar partes de la lava", "El hielo se derrite muy rapido y caes al rio"}},
+       "Escudo de roca volcanica", 0;}
+     }                  
 };
 
 <<<<<<< HEAD
