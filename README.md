@@ -1,47 +1,9 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/mi1WNrHU)
-# Proyecto de C++ - ChronoCosmos
-
-
+# Proyecto de C++ 🌌 ChronoCosmos
 
 ## Descripción del Proyecto
 
-Este proyecto es un juego interactivo en el cual el jugador debe tomar decisiones en base a distintas aventuras, las situaciones deben ser resueltas correctamente para avanzar de nivel. Cada nivel representa un nuevo desafío que el jugador debe superar eligiendo entre diferentes opciones. Al avanzar con éxito los niveles, el jugador desbloquea “recompensas”. El objetivo final es completar todos los niveles con éxito y derrotar a los malos de cada aventura.
-
-## Equipo
-
-- **Nombre del equipo: PUNTO Y COMA** 
-
-### Integrantes del equipo
-
-1. **LUCIA GABRIELA NAVARRO MARIN**: 00109525
-
-2. **HAZEL ANAHI MORALES GALVEZ**: 00050125
-   
-3. **GARY GEOVANNI SIBRIAN DERAS**: 00021925
-
-4. **DANIELA BEATRIZ RAMOS PAZ**: 00113825
-
-
-## Instrucciones de Ejecución
-
-1. Clona este repositorio en tu máquina local, en el escritorio:
-   ```bash
-   git clone https://github.com/FDP-01-2025/project-punto-y-coma.git
-
-2. Busca el archivo en la carpeta previamente clonada bajo el nombre [project-punto-y-coma].
-
-3. Ábrelo en Visual Sutdio Code.
-
-4. Crea una nueva terminal:
-   ```bash
-   g++ -o chronocosmos main.cpp
-
-5. Ejecutalo y ¡DIVIERTETE!
-   ```bash
-   ./chronocosmos.exe
-
-
-# 🌌 ChronoCosmos
+Este proyecto es un juego interactivo en el cual el jugador debe tomar decisiones en base a distintas aventuras, las situaciones deben ser resueltas correctamente para avanzar de nivel. Cada nivel representa un nuevo desafío que el jugador debe superar eligiendo entre diferentes opciones. Al avanzar con éxito los niveles, el jugador desbloquea “recompensas”. El objetivo final es completar todos los niveles con éxito y superar las situaciones de cada aventura.
 
 ## 🎮 Nombre del juego
 **ChronoCosmos**
@@ -81,4 +43,76 @@ El juego es completamente interactivo desde la consola. Se centra en decisiones 
 
 ### ✔️ Archivos
 - Funciones para **guardar** y **leer** progreso usando `ofstream` y `ifstream`.
+
+### ✔️ Funciones
+
+**Funciones principales:**
+
+- agregarPremio()
+
+- mostrarPremios()
+
+- jugarNivel()
+
+- jugarAventura()
+
+- intentarJugarAventura()
+
+- introduccionJuego()
+
+- guardarProgreso()
+
+- leerProgreso()
+
+### ✔️ Modularización
+
+- Archivo header (header.h): contiene declaraciones de estructuras y funciones.
+
+- Archivo definiciones (def.cpp): contiene implementaciones completas.
+
+- Archivo principal (main.cpp): controla el juego.
+
+### ⚙️ Consideraciones técnicas
+
+**🛠️ Dependencias**
+
+- Lenguaje: C++
+
+- Librerías: <iostream>, <fstream>
+
+- No requiere librerías externas adicionales.
+
+**💻 Cómo compilar**
+
+1. Debes tener un compilador C++, por ejemplo g++.
+
+2. Clona este repositorio en tu máquina local, en el escritorio:
+   ```bash
+   git clone https://github.com/FDP-01-2025/project-punto-y-coma.git
+
+3. Busca el archivo en la carpeta previamente clonada bajo el nombre [project-punto-y-coma].
+
+4. Ábrelo en Visual Sutdio Code.
+
+5. Crea una nueva terminal y escribe:
+   ```bash
+   g++ -o chronocosmos main.cpp
+
+6. Ejecutalo y ¡DIVIERTETE!
+   ```bash
+   ./chronocosmos.exe
+
+## Equipo
+
+- **Nombre del equipo: PUNTO Y COMA** 
+
+### Integrantes del equipo
+
+1. **LUCIA GABRIELA NAVARRO MARIN**: 00109525
+
+2. **HAZEL ANAHI MORALES GALVEZ**: 00050125
+   
+3. **GARY GEOVANNI SIBRIAN DERAS**: 00021925
+
+4. **DANIELA BEATRIZ RAMOS PAZ**: 00113825
 
