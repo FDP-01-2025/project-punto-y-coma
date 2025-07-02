@@ -45,25 +45,11 @@ Aventura nerysia = {
         "PREMIO", 2}
     }
 };
-
 //aventura dos
 Aventura infernum = {
-    "Infermun (Mundo de Fuego)",
-    {
-        {"Nivel 1 - Llanuras de ceniza: El suelo tiembla bajo tus pies, unos lagartos ígneos han comenzado a atacar caravanas de comerciantes de roca volcánica.",
-             {{"Tratas de hablar con los lagartos", "Los lagartos no entienden y se alteran aún más."},
-              {"Les arrojas agua congelada", "Los lagartos se enfurecen y comienzan atacar a todos."},
-              {"Los distraes con una antorcha brillante", "Los lagartos se confunden con la luz y se quedan quietos, salvando a los comerciantes."}}
-        "Espada de lava", 2}
-    }           
+   
 };
 
-<<<<<<< HEAD
-
-//aventura tres
-Aventura thornia = {
-    
-=======
 Aventura thornia = {//declaramos el la aventura a la que vamos a añadirle datos
     "thornia (El mundo olvidado)",//nombre de la aventura como en la estructura pide
     {
@@ -98,14 +84,13 @@ Aventura thornia = {//declaramos el la aventura a la que vamos a añadirle datos
             {"Investigas los simbolos en las paredes. ", "Reaccionan con la capucha y se abre ante ti la puerta. "}
           },
           "Libro desconocido. ", 2 },
-        { "Encuentras una mazmorra y te enfrentas al Portador del Olvido y . ",
+        { "Encuentras una mazmorra y te enfrentas al Portador del Olvido y la zona esta . ",
           { {"Atacar con tu hacha. ", "sigilo. "},
             {"atributos", "ganas un arma ."},
             {"Escapar con un artefacto robado", "Obtienes una maldicion."}
           },
           "maldicion", 0 }// no le pongan atencion al ultimo lo puse por poner falta plantear
 }
->>>>>>> c7ed183db97085e7cf0c39188786d39b231d1ff4
 };
 
 
