@@ -13,38 +13,57 @@ string nombreJugador;
 //aventura uno
 Aventura nerysia = {
     "Nerysia (Mundo de Agua)",
+  Aventura nerysia = {
+    "Nerysia: El Reino Sumergido",
     {
-        {"SITUACION.", 
-            {{"OPCION", "CONSECUENCIA."},
-             {"OPCION", "CONSECUENCIA."},
-             {"OPCION", "CONSECUENCIA"}},
-        "PREMIO", 2},//este dos representa la opcion correcta del 1 al 3
-
-        {"SITUACION.",
-            {{"OPCION", "CONSECUENCIA."},
-             {"OPCION", "CONSECUENCIA."},
-             {"OPCION", "CONSECUENCIA."}},
-        "PREMIO", 0},
-
-        {"SITUACION.",
-            {{"OPCION", "CONSECUENCIA."},
-             {"OPCION", "CONSECUENCIA."},
-             {"OPCION", "CONSECUENCIA."}},
-        "PREMIO", 1},
-
-        {"SITUACION.",
-            {{"OPCION", "CONSECUENCIA."},
-             {"OPCION", "CONSECUENCIA."},
-             {"OPCION", "CONSECUENCIA."}},
-        "PREMIO", 1},
-
-        {"SITUACION.",
-            {{"OPCION", "CONSECUENCIA."},
-             {"OPCION", "CONSECUENCIA."},
-             {"OPCION", "CONSECUENCIA."}},
-        "PREMIO", 2},
+        {
+            "Nivel 1 – Arrecife de Coral\nLos peces globo han encontrado su hogar destruido. Están furiosos y atacan la aldea de los pulpos.\n¿Qué arma le recomiendas usar?",
+            {
+                {"Sus espinas", "Las espinas no son efectivas y se lastiman entre ellos."},
+                {"Una espada", "La espada se hunde sin control. No funciona bajo el agua."},
+                {"La tinta de los pulpos", "La tinta confunde a los atacantes. ¡Buena elección!"}
+            },
+            "Perla de defensa", 2
+        },
+        {
+            "Nivel 2 – Cuevas de Algas Eternas\nEscuchas un canto hipnótico de sirenas oscuras que quieren robarte tu energía vital.\n¿Qué haces?",
+            {
+                {"Sigues el canto", "Te pierdes en un trance profundo."},
+                {"Te tapas los oídos con algas", "Resistes el hechizo y sigues avanzando."},
+                {"Lanzas una piedra hacia el sonido", "Las sirenas se distraen pero aún te siguen."}
+            },
+            "Collar de protección", 1
+        },
+        {
+            "Nivel 3 – Fosa Abisal del Olvido\nEncuentras un pez anciano encerrado en una jaula de coral negro que suplica por ayuda.\n¿Qué haces?",
+            {
+                {"Lo liberas sin preguntar", "El pez te agradece pero resulta ser un espíritu errante."},
+                {"Le haces preguntas antes de decidir", "Descubres que es el guardián del abismo. Ganas su sabiduría."},
+                {"Lo ignoras", "El pez se entristece y el lugar se oscurece más."}
+            },
+            "Luz abisal", 1
+        },
+        {
+            "Nivel 4 – Campos de Corrientes Locas\nUna corriente violenta te arrastra. ¿Con qué criatura te alías?",
+            {
+                {"Un calamar gigante", "Te ayuda pero te lleva por un camino muy peligroso."},
+                {"Un grupo de tortugas marinas", "Te guían con calma a través de la corriente."},
+                {"Un delfín solitario muy veloz", "Te lleva rápido pero casi pierdes el rumbo."}
+            },
+            "Caparazón de velocidad", 1
+        },
+        {
+            "Nivel 5 – El Palacio de la Corrupción\nUna criatura hecha de petróleo y sombras está corrompiendo el agua.\n¿Cómo decides enfrentarlo?",
+            {
+                {"Usas una perla sagrada", "La luz de la perla purifica al monstruo poco a poco."},
+                {"Invocas a todas las criaturas", "Todas ayudan, pero no es suficiente sin una guía clara."},
+                {"Usas tu propia energía vital", "Logras vencer, pero quedas debilitado."}
+            },
+            "Corona del océano", 0
+        }
     }
 };
+
 
 //aventura dos
 Aventura infernum = {
