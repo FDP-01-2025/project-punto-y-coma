@@ -24,6 +24,12 @@ struct Aventura {
     Nivel niveles[5];
 };
 
+// Configuración para minijuegos: activar y tipo por nivel (5 niveles)
+struct ConfigMinijuegos {
+    bool activar[5];  // true si hay minijuego en ese nivel
+    int tipo[5];      // tipo de minijuego: 1=Memoria, 2=Tesoro, 3=Simon, 4=Contar
+};
+
 // Variables globales
 
 extern bool aventurasJugadas[3];
@@ -39,16 +45,25 @@ void mostrarPremios();
 //funcion jugar nivel
 void jugarNivel(const Nivel& nivel);
 //funcion jugar aventura
-void jugarAventura(const Aventura& aventura);
+void jugarAventura(const Aventura& aventura, const ConfigMinijuegos& config);
 //funcion intentar jugar aventura para validar las veces que ha jugado una aventura
-void intentarJugarAventura(const Aventura& aventura, int indiceAventura);
+void intentarJugarAventura(const Aventura& aventura, int indiceAventura, const ConfigMinijuegos& config);
 //funcion introduccion al juego
 void introduccionJuego();
 //funcion para guardar proceso y hacer uso de archivos
 void guardarProgreso(string nombre, string aventuras, string premios);
+//leemos progreso y lo mandamos a llamar
 void leerProgreso();
+//funciones para configurar los minijuegos
+ConfigMinijuegos obtenerConfigNerysia();
+ConfigMinijuegos obtenerConfigInfernum();
+ConfigMinijuegos obtenerConfigThornia();
 
-
+// Declaración de minijuegos
+void minijuegoMemoria();
+void minijuegoTesoro();
+void minijuegoSimon();
+void minijuegoContar();
 
 // Declaración de aventuras
 extern Aventura nerysia;
