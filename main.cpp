@@ -20,13 +20,13 @@ int main() {
 
         switch (opcion) {
             case 1:
-                intentarJugarAventura(nerysia, 0);
+                intentarJugarAventura(nerysia, 0, obtenerConfigNerysia());
                 break;
             case 2:
-                intentarJugarAventura(infernum, 1);
+                intentarJugarAventura(infernum, 1, obtenerConfigInfernum());
                 break;
             case 3:
-                intentarJugarAventura(thornia, 2);
+                intentarJugarAventura(thornia, 2, obtenerConfigThornia());
                 break;
             case 4:
                 mostrarPremios();
