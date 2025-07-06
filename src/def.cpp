@@ -13,8 +13,55 @@ string nombreJugador;
 //aventura uno
 Aventura nerysia = {
     "Nerysia (Mundo de Agua)",
+    {
+        // Nivel 1 – Arrecife de Coral
+        { "Los peces globo han encontrado su hogar destruido. Están furiosos y atacan la aldea de los pulpos.\n¿Qué arma le recomiendas usar?",
+          { 
+              {"Sus espinas", "Los peces se confunden y dejan de atacar por un momento."},
+              {"Una espada", "La espada no sirve bajo el agua, pierdes tiempo."},
+              {"La tinta de los pulpos", "La tinta los ciega y logran huir a tiempo."}
+          },
+          "Tinta ancestral", 1  },
+
+        // Nivel 2 – Cuevas de Algas Eternas
+        { "Mientras avanzas por una cueva cubierta de algas brillantes, escuchas un canto hipnótico. Te das cuenta de que viene de unas sirenas oscuras que intentan distraerte para robarte tu energía vital.",
+          {
+              {"Sigues el canto, puede que te lleven a una pista", "Te hipnotizan y pierdes energía."},
+              {"Te tapas los oídos con algas", "Resistes el canto y avanzas con éxito."},
+              {"Lanzas una piedra hacia el sonido para distraerlas", "Las confundes y logras escapar sin ser visto."}
+          },
+          "Perla luminosa", 2 },
+
+        // Nivel 3 – Fosa Abisal del Olvido
+        { "Llegas a una zona tan profunda que la luz desaparece. Encuentras un pez anciano encerrado en una jaula de coral negro que suplica por ayuda.",
+          {
+              {"Lo liberas sin preguntar", "Era una trampa, el pez te traiciona."},
+              {"Le haces preguntas antes de decidir", "El pez demuestra su sabiduría y te entrega un fragmento antiguo."},
+              {"Lo ignoras y sigues tu camino", "Te sientes culpable, pero te ahorras problemas."}
+          },
+          "Fragmento de coral antiguo", 2 },
+
+        // Nivel 4 – Campos de Corrientes Locas
+        { "Una corriente violenta te arrastra, y debes elegir con qué criatura aliarte para que te ayude a nadar a salvo.",
+          {
+              {"Un calamar gigante", "Te ayuda, pero te exige un favor futuro."},
+              {"Un grupo de tortugas marinas", "Te transportan con calma y seguridad."},
+              {"Un delfín solitario muy veloz", "Llegas rápido, pero te separas del grupo."}
+          },
+          "Amuleto de corriente", 3 },
+
+        // Nivel 5 – El Palacio de la Corrupción
+        { "Llegas al corazón de la oscuridad: una criatura gigantesca hecha de petróleo y sombras está corrompiendo el agua.\n¿Cómo decides enfrentarlo?",
+          {
+              {"Usas una perla sagrada que encontraste en el camino", "La criatura se debilita y retrocede."},
+              {"Invocas a todas las criaturas que ayudaste antes", "Luchan contigo y logran contenerla."},
+              {"Usas tu propia energía vital como último recurso", "La criatura desaparece, pero quedas gravemente herido."}
+          },
+          "Corazón de Nerysia",4}
+}
     
     
+
 };
 
 
