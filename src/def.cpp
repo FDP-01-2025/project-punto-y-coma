@@ -135,10 +135,10 @@ Aventura thornia = {//declaramos el la aventura a la que vamos a añadirle datos
             {"Investigas los simbolos en las paredes. ", "Reaccionan con la capucha y se abre ante ti la puerta. "}
           },
           "Libro desconocido. ", 3 },
-        { "Continuara.",
-          { {"Pelea o algo", "sigilo."},
-            {"atributos", "ganas un arma ."},
-            {"Escapar con un artefacto robado", "Obtienes una maldicion."}
+        { "Tras cruzar la puerta, entras en una cámara iluminada por cristales flotantes. En el centro, el Guardián del Olvido despierta de su letargo. Solo una acción puede debilitarlo para tener oportunidad de vencerlo.",
+          { {"Atacar directamente con el hacha.", "El guardián bloquea tu ataque y te lanza contra la pared, dejándote herido."},
+            {"Leer en voz alta la inscripción del libro desconocido.", "La sala tiembla. El guardián parece debilitado y tambalea, pero sigue en pie."},
+            {"Cubrirte con la capucha vieja.", "La capucha se quema al contacto con la energía del guardián y quedas desprotegido."}
           },
           "maldicion", 0 }// no le pongan atencion al ultimo lo puse por poner falta plantear
 }
