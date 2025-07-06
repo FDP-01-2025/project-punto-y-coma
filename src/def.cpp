@@ -190,7 +190,7 @@ void mostrarProgreso() {
 //minijuego 1 uno 
 void minijuegoMemoria() {
     char tablero[2][2] = {{'A', 'B'}, {'B', 'A'}};
-    char visible[2][2] = {{'', ''}, {'', ''}};
+    char visible[2][2] = {{'*', '*'}, {'*', '*'}};
 
     int f1, c1, f2, c2;
 
