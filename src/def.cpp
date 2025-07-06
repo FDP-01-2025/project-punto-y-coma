@@ -383,7 +383,7 @@ ConfigMinijuegos obtenerConfigThornia() {
 }
 
 //jugar nivel de aventura
-void jugarNivel(const Nivel& nivel) {
+bool jugarNivel(const Nivel& nivel, const ConfigMinijuegos& config, int indiceNivel) {
     cout << "\nSituacion: " << nivel.situacion << "\n";
     for (int i = 0; i < 3; i++) { //si los niveles son menores a 3
         cout << i + 1 << ". " << nivel.decisiones[i].texto << "\n"; //manda el arreglo de decisiones
@@ -403,19 +403,8 @@ void jugarNivel(const Nivel& nivel) {
     if ((opcion - 1) == nivel.opcionGanadora) { //si la opcion que eligio es igual a la opcion ganadora muestra el mensaje
         cout << "¡Ganaste el premio: " << nivel.premio << "!\n";
         agregarPremio(nivel.premio); // agregamos premio al arreglo
-    } else {
-        cout << "Sobreviviste, pero sin premio.\n";
-    }
-}
-//funcion de jugar aventura 
-void jugarAventura(const Aventura& aventura, const ConfigMinijuegos& config) {
-    cout << "\n--- Bienvenido a " << aventura.nombre << " ---\n";
-    for (int i = 0; i < 5; i++) { //recorremos el arreglo de la funcion 
-        cout << "\n--- Nivel " << i + 1 << " ---";
-        jugarNivel(aventura.niveles[i]);
-
-      if (config.activar[i]) {
-            switch (config.tipo[i]) {
+        if (config.activar[indiceNivel]) {
+            switch (config.tipo[indiceNivel]) {
                 case 1: minijuegoTesoro(); break;
                 case 2: minijuegoSimon(); break;
                 case 3: minijuegoContar(); break;
@@ -423,6 +412,27 @@ void jugarAventura(const Aventura& aventura, const ConfigMinijuegos& config) {
                 default: break; // ningún minijuego
             }
         }
+                return true;  //  Pasó el nivel
+
+    } else {
+        cout << "Opción incorrecta. ¡Debes intentarlo de nuevo!\n";
+                return false; // Repetir nivel
+
+    }
+}
+//funcion de jugar aventura 
+void jugarAventura(const Aventura& aventura, const ConfigMinijuegos& config) {
+    cout << "\n--- Bienvenido a " << aventura.nombre << " ---\n";
+    for (int i = 0; i < 5; i++) { //recorremos el arreglo de la funcion 
+        cout << "\n--- Nivel " << i + 1 << " ---";
+        bool pasoNivel = false;
+        do {
+            pasoNivel = jugarNivel(aventura.niveles[i], config, i);
+        } while (!pasoNivel); // 🔁 Repite hasta que el jugador acierte
+       // jugarNivel(aventura.niveles[i]);
+      // jugarNivel(aventura.niveles[i], config, i); //  Pasas config y el índice actual
+
+      
     }
     cout << "\n¡Has completado la aventura!\n";
     
