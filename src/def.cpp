@@ -186,7 +186,263 @@ void mostrarProgreso() {
     }
 }
 
+//añadiendo minijuegos mamalones
+//minijuego 1 uno 
+void minijuegoMemoria() {
+    char tablero[2][2] = {{'A', 'B'}, {'B', 'A'}};
+    char visible[2][2] = {{'', ''}, {'', ''}};
 
+    int f1, c1, f2, c2;
+
+    cout << "\n--- Minijuego de Memoria (versión fija) ---\n";
+    cout << "Encuentra el par igual para ganar un premio.\n";
+
+    do {
+        // Mostrar tablero visible
+        cout << "  0 1\n";
+        for (int i = 0; i < 2; i++) {
+            cout << i << " ";
+            for (int j = 0; j < 2; j++) {
+                cout << visible[i][j] << " ";
+            }
+            cout << endl;
+        }
+
+        cout << "Selecciona primera carta (fila y columna): ";
+        cin >> f1 >> c1;
+        cout << "Selecciona segunda carta (fila y columna): ";
+        cin >> f2 >> c2;
+
+        // Mostrar temporalmente
+        visible[f1][c1] = tablero[f1][c1];
+        visible[f2][c2] = tablero[f2][c2];
+
+        cout << "\nTablero actualizado:\n";
+        cout << "  0 1\n";
+        for (int i = 0; i < 2; i++) {
+            cout << i << " ";
+            for (int j = 0; j < 2; j++) {
+                cout << visible[i][j] << " ";
+            }
+            cout << endl;
+        }
+
+        if (tablero[f1][c1] == tablero[f2][c2]) {
+            cout << "¡Encontraste el par!\n";
+            break;
+        } else {
+            cout << "No son iguales, intenta de nuevo.\n";
+            visible[f1][c1] = '*';
+            visible[f2][c2] = '*';
+        }
+
+    } while (true);
+
+    cout << "Minijuego terminado.\n";
+}
+
+//minijuego 2 
+void minijuegoTesoro() {
+    char tablero[3][3] = {
+        {' ', ' ', ' '},
+        {' ', 'T', ' '},
+        {' ', ' ', ' '}
+    };
+
+    int fila, col;
+
+    cout << "\n--- Minijuego: Busca el Tesoro ---\n";
+    cout << "Encuentra el tesoro escondido en la matriz 3x3.\n";
+
+    do {
+        // Mostrar tablero
+        cout << "  0 1 2\n";
+        for (int i = 0; i < 3; i++) {
+            cout << i << " ";
+            for (int j = 0; j < 3; j++) {
+                cout << "* ";
+            }
+            cout << endl;
+        }
+
+        cout << "Elige fila (0-2): ";
+        cin >> fila;
+        cout << "Elige columna (0-2): ";
+        cin >> col;
+
+        if (tablero[fila][col] == 'T') {
+            cout << "¡Encontraste el tesoro!\n";
+            break;
+        } else {
+            cout << "Nada aquí. Sigue buscando.\n";
+        }
+    } while (true);
+
+    cout << "Minijuego terminado.\n";
+} 
+//minijeugo  3 q dislexia dios mio
+
+void minijuegoSimon() {
+    char secuencia[3] = {'A', 'B', 'C'};
+    char respuesta[3];
+
+    cout << "\n--- Minijuego: Simón Dice ---\n";
+    cout << "Memoriza esta secuencia: A B C\n";
+
+    // Mostrar la secuencia
+    cout << "Presiona enter cuando estés listo...";
+    cin.ignore();
+    cin.get();
+
+    // Borrar pantalla (opcional, puedes pedir al jugador que no mire)
+    for (int i = 0; i < 20; i++) cout << endl;
+
+    cout << "Ingresa la secuencia (3 letras): \n";
+    for (int i = 0; i < 3; i++) {
+        cout << "Letra " << i + 1 << ": ";
+        cin >> respuesta[i];
+    }
+
+    bool correcto = true;
+    for (int i = 0; i < 3; i++) {
+        if (respuesta[i] != secuencia[i]) {
+            correcto = false;
+            break;
+        }
+    }
+
+    if (correcto) {
+        cout << "¡Correcto! Superaste el reto.\n";
+    } else {
+        cout << "¡Secuencia incorrecta! Fallaste.\n";
+    }
+
+    cout << "Minijuego terminado.\n";
+}
+
+//minijuego 3
+
+void minijuegoContar() {
+    char tablero[4][4] = {
+        {'O', 'X', 'O', ' '},
+        {' ', 'O', ' ', 'X'},
+        {'X', ' ', 'O', ' '},
+        {' ', 'X', ' ', 'O'}
+    };
+
+    int contador = 0;
+
+    cout << "\n--- Minijuego: Cuenta las O ---\n";
+
+    // Mostrar tablero
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 4; j++) {
+            cout << tablero[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    cout << "¿Cuántas 'O' hay en el tablero? ";
+    int respuesta;
+    cin >> respuesta;
+
+    // Contar las O
+    for (int i = 0; i < 4; i++)
+        for (int j = 0; j < 4; j++)
+            if (tablero[i][j] == 'O')
+                contador++;
+
+    if (respuesta == contador) {
+        cout << "¡Correcto! Contaste bien.\n";
+    } else {
+        cout << "¡Incorrecto! Había " << contador << " O.\n";
+    }
+
+    cout << "Minijuego terminado.\n";
+}
+// Configuraciones de minijuegos para cada aventura
+ConfigMinijuegos obtenerConfigNerysia() {
+    return ConfigMinijuegos{
+        {false, true, false, false, true}, // niveles con minijuego
+        {1, 0, 0, 0, 3}                   // tipo de minijuego: 1 = Tesoro, 3 = Contar
+    };
+}
+
+ConfigMinijuegos obtenerConfigInfernum() {
+    return ConfigMinijuegos{
+        {true, false, false, true, false},
+        {2, 0, 0, 4, 0}  // 2 = Simon, 4 = otro
+    };
+}
+
+ConfigMinijuegos obtenerConfigThornia() {
+    return ConfigMinijuegos{
+        {false, false, false, false, false},
+        {0, 0, 0, 0, 0}
+    };
+}
+
+//jugar nivel de aventura
+void jugarNivel(const Nivel& nivel) {
+    cout << "\nSituacion: " << nivel.situacion << "\n";
+    for (int i = 0; i < 3; i++) { //si los niveles son menores a 3
+        cout << i + 1 << ". " << nivel.decisiones[i].texto << "\n"; //manda el arreglo de decisiones
+    }
+
+    int opcion;//declaramos un entero para la opcion de las decisiones
+    do {
+        cout << "Elige una opcion: ";
+        cin >> opcion;
+        if (opcion < 1 || opcion > 3) { //una condicional que elija solamente entre la opcion  1 a 3
+            cout << "Opcion invalida. Intenta de nuevo.\n";
+        }
+    } while (opcion < 1 || opcion > 3); //todo eso lo hara mientras sean esas opciones
+
+    cout << "\n" << nivel.decisiones[opcion - 1].consecuencia << "\n"; //mostramos el arreglo de opciones -1 y la consecuencia que es correspndiente
+
+    if ((opcion - 1) == nivel.opcionGanadora) { //si la opcion que eligio es igual a la opcion ganadora muestra el mensaje
+        cout << "¡Ganaste el premio: " << nivel.premio << "!\n";
+        agregarPremio(nivel.premio); // agregamos premio al arreglo
+    } else {
+        cout << "Sobreviviste, pero sin premio.\n";
+    }
+}
+//funcion de jugar aventura 
+void jugarAventura(const Aventura& aventura, const ConfigMinijuegos& config) {
+    cout << "\n--- Bienvenido a " << aventura.nombre << " ---\n";
+    for (int i = 0; i < 5; i++) { //recorremos el arreglo de la funcion 
+        cout << "\n--- Nivel " << i + 1 << " ---";
+        jugarNivel(aventura.niveles[i]);
+
+      if (config.activar[i]) {
+            switch (config.tipo[i]) {
+                case 1: minijuegoTesoro(); break;
+                case 2: minijuegoSimon(); break;
+                case 3: minijuegoContar(); break;
+                case 4: minijuegoMemoria(); break;
+                default: break; // ningún minijuego
+            }
+        }
+    }
+    cout << "\n¡Has completado la aventura!\n";
+    
+}
+
+//ConfigMinijuegos config;  // variable global en def.cpp
+
+void intentarJugarAventura(const Aventura& aventura, int indiceAventura, const ConfigMinijuegos& config) {
+    if (indiceAventura < 0 || indiceAventura >= 3) {
+        cout << "Indice de aventura invalido.\n";
+        return;
+    }
+    if (aventurasJugadas[indiceAventura]) {
+        cout << "\nYa jugaste la aventura \"" << aventura.nombre << "\" anteriormente.\n";
+    } else {
+     
+        jugarAventura(aventura, config);
+        aventurasJugadas[indiceAventura] = true;
+    }
+}
 void introduccionJuego() {
     cout << "Antes de comenzar, dime tu nombre: ";
     cin >> nombreJugador;
