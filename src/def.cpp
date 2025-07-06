@@ -13,55 +13,8 @@ string nombreJugador;
 //aventura uno
 Aventura nerysia = {
     "Nerysia (Mundo de Agua)",
-  Aventura nerysia = {
-    "Nerysia: El Reino Sumergido",
-    {
-        {
-            "Nivel 1 – Arrecife de Coral\nLos peces globo han encontrado su hogar destruido. Están furiosos y atacan la aldea de los pulpos.\n¿Qué arma le recomiendas usar?",
-            {
-                {"Sus espinas", "Las espinas no son efectivas y se lastiman entre ellos."},
-                {"Una espada", "La espada se hunde sin control. No funciona bajo el agua."},
-                {"La tinta de los pulpos", "La tinta confunde a los atacantes. ¡Buena elección!"}
-            },
-            "Perla de defensa", 2
-        },
-        {
-            "Nivel 2 – Cuevas de Algas Eternas\nEscuchas un canto hipnótico de sirenas oscuras que quieren robarte tu energía vital.\n¿Qué haces?",
-            {
-                {"Sigues el canto", "Te pierdes en un trance profundo."},
-                {"Te tapas los oídos con algas", "Resistes el hechizo y sigues avanzando."},
-                {"Lanzas una piedra hacia el sonido", "Las sirenas se distraen pero aún te siguen."}
-            },
-            "Collar de protección", 1
-        },
-        {
-            "Nivel 3 – Fosa Abisal del Olvido\nEncuentras un pez anciano encerrado en una jaula de coral negro que suplica por ayuda.\n¿Qué haces?",
-            {
-                {"Lo liberas sin preguntar", "El pez te agradece pero resulta ser un espíritu errante."},
-                {"Le haces preguntas antes de decidir", "Descubres que es el guardián del abismo. Ganas su sabiduría."},
-                {"Lo ignoras", "El pez se entristece y el lugar se oscurece más."}
-            },
-            "Luz abisal", 1
-        },
-        {
-            "Nivel 4 – Campos de Corrientes Locas\nUna corriente violenta te arrastra. ¿Con qué criatura te alías?",
-            {
-                {"Un calamar gigante", "Te ayuda pero te lleva por un camino muy peligroso."},
-                {"Un grupo de tortugas marinas", "Te guían con calma a través de la corriente."},
-                {"Un delfín solitario muy veloz", "Te lleva rápido pero casi pierdes el rumbo."}
-            },
-            "Caparazón de velocidad", 1
-        },
-        {
-            "Nivel 5 – El Palacio de la Corrupción\nUna criatura hecha de petróleo y sombras está corrompiendo el agua.\n¿Cómo decides enfrentarlo?",
-            {
-                {"Usas una perla sagrada", "La luz de la perla purifica al monstruo poco a poco."},
-                {"Invocas a todas las criaturas", "Todas ayudan, pero no es suficiente sin una guía clara."},
-                {"Usas tu propia energía vital", "Logras vencer, pero quedas debilitado."}
-            },
-            "Corona del océano", 0
-        }
-    }
+    
+    
 };
 
 
@@ -101,12 +54,6 @@ Aventura infernum = {
      }                  
 };
 
-<<<<<<< HEAD
-
-//aventura tres
-Aventura thornia = {
-    
-=======
 Aventura thornia = {//declaramos el la aventura a la que vamos a añadirle datos
     "thornia (El mundo olvidado)",//nombre de la aventura como en la estructura pide
     {
@@ -148,11 +95,11 @@ Aventura thornia = {//declaramos el la aventura a la que vamos a añadirle datos
           },
           "maldicion", 0 }// no le pongan atencion al ultimo lo puse por poner falta plantear
 }
->>>>>>> c7ed183db97085e7cf0c39188786d39b231d1ff4
 };
 
 
 // Funciones
+
 //agrega premio segun gane
 void agregarPremio(string premio) {
     if (cantidadPremios < 20) {//si la cantidad es menor a 20 premios
@@ -238,55 +185,7 @@ void mostrarProgreso() {
         cout << "No se pudo abrir el archivo para leer el progreso.\n";
     }
 }
-//jugar nivel de aventura
-void jugarNivel(const Nivel& nivel) {
-    cout << "\nSituacion: " << nivel.situacion << "\n";
-    for (int i = 0; i < 3; i++) { //si los niveles son menores a 3
-        cout << i + 1 << ". " << nivel.decisiones[i].texto << "\n"; //manda el arreglo de decisiones
-    }
 
-    int opcion;//declaramos un entero para la opcion de las decisiones
-    do {
-        cout << "Elige una opcion: ";
-        cin >> opcion;
-        if (opcion < 1 || opcion > 3) { //una condicional que elija solamente entre la opcion  1 a 3
-            cout << "Opcion invalida. Intenta de nuevo.\n";
-        }
-    } while (opcion < 1 || opcion > 3); //todo eso lo hara mientras sean esas opciones
-
-    cout << "\n" << nivel.decisiones[opcion - 1].consecuencia << "\n"; //mostramos el arreglo de opciones -1 y la consecuencia que es correspndiente
-
-    if ((opcion - 1) == nivel.opcionGanadora) { //si la opcion que eligio es igual a la opcion ganadora muestra el mensaje
-        cout << "¡Ganaste el premio: " << nivel.premio << "!\n";
-        agregarPremio(nivel.premio); // agregamos premio al arreglo
-    } else {
-        cout << "Sobreviviste, pero sin premio.\n";
-    }
-}
-//funcion de jugar aventura 
-void jugarAventura(const Aventura& aventura) {
-    cout << "\n--- Bienvenido a " << aventura.nombre << " ---\n";
-    for (int i = 0; i < 5; i++) { //recorremos el arreglo de la funcion 
-        cout << "\n--- Nivel " << i + 1 << " ---";
-        jugarNivel(aventura.niveles[i]);
-    }
-    cout << "\n¡Has completado la aventura!\n";
-    
-    
-}
-
-void intentarJugarAventura(const Aventura& aventura, int indiceAventura) {
-    if (indiceAventura < 0 || indiceAventura >= 3) {
-        cout << "Indice de aventura invalido.\n";
-        return;
-    }
-    if (aventurasJugadas[indiceAventura]) {
-        cout << "\nYa jugaste la aventura \"" << aventura.nombre << "\" anteriormente.\n";
-    } else {
-        jugarAventura(aventura);
-        aventurasJugadas[indiceAventura] = true;
-    }
-}
 
 void introduccionJuego() {
     cout << "Antes de comenzar, dime tu nombre: ";
