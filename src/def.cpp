@@ -66,12 +66,12 @@ Aventura nerysia = {
 
 //aventura dos
 Aventura infernum = {
-    "Infernum (Mundo de Fuego)",
-    {
+
            "Infernum (Fire World)",
     {
         {"Level 1 - Ashen Plains: The ground trembles beneath your feet. Fiery lizards have started attacking caravans of volcanic rock traders. What do you do to save the merchants?",
-             {{"You try to talk to the lizards", "The lizards don’t understand and become even more agitated."},
+             {
+                {"You try to talk to the lizards", "The lizards don’t understand and become even more agitated."},
               {"You throw frozen water at them", "The lizards become enraged and start attacking everyone."},
               {"You distract them with a bright torch", "The lizards are confused by the light and freeze, saving the merchants."}},
              "Lava Sword", 2},
