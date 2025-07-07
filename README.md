@@ -115,11 +115,16 @@ Clone this repository to your local machine, on the desktop:
    ```bash
    git clone https://github.com/FDP-01-2025/project-punto-y-coma.git
 
-3. Busca el archivo en la carpeta previamente clonada bajo el nombre [project-punto-y-coma].
+Aquí tienes esa línea traducida al inglés:
 
-4. Ábrelo en Visual Sutdio Code.
+**3. Locate the file in the previously cloned folder named \[project-punto-y-coma].**
 
-5. Crea una nueva terminal y escribe:
+
+**4. Open it in Visual Studio Code.**
+
+
+5.**5. Create a new terminal and type:**
+
    ```bash
    g++ -o chronocosmos main.cpp
 
@@ -129,9 +134,11 @@ Clone this repository to your local machine, on the desktop:
 
 ## 🔨 Equipo
 
-- **Nombre del equipo: PUNTO Y COMA** 
+- **Team Name: PUNTO Y COMA**
 
-### ✏️ Integrantes del equipo
+
+### ✏️ **Team Members**
+
 
 1. **LUCIA GABRIELA NAVARRO MARIN**: 00109525
 
