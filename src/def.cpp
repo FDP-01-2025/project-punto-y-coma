@@ -432,39 +432,40 @@ ConfigMinijuegos obtenerConfigThornia() {
 //jugar nivel de aventura
 bool jugarNivel(const Nivel& nivel, const ConfigMinijuegos& config, int indiceNivel) {
     cout << "\nSituacion: " << nivel.situacion << "\n";
-    for (int i = 0; i < 3; i++) { //si los niveles son menores a 3
-        cout << i + 1 << ". " << nivel.decisiones[i].texto << "\n"; //manda el arreglo de decisiones
+    for (int i = 0; i < 3; i++) {
+        cout << i + 1 << ". " << nivel.decisiones[i].texto << "\n";
     }
 
-    int opcion;//declaramos un entero para la opcion de las decisiones
+    int opcion;
     do {
         cout << "Elige una opcion: ";
         cin >> opcion;
-        if (opcion < 1 || opcion > 3) { //una condicional que elija solamente entre la opcion  1 a 3
+        if (opcion < 1 || opcion > 3) {
             cout << "Opcion invalida. Intenta de nuevo.\n";
         }
-    } while (opcion < 1 || opcion > 3); //todo eso lo hara mientras sean esas opciones
+    } while (opcion < 1 || opcion > 3);
 
-    cout << "\n" << nivel.decisiones[opcion - 1].consecuencia << "\n"; //mostramos el arreglo de opciones -1 y la consecuencia que es correspndiente
+    cout << "\n" << nivel.decisiones[opcion - 1].consecuencia << "\n";
 
-    if ((opcion - 1) == nivel.opcionGanadora) { //si la opcion que eligio es igual a la opcion ganadora muestra el mensaje
-        cout << "¡Ganaste el premio: " << nivel.premio << "!\n";
-        agregarPremio(nivel.premio); // agregamos premio al arreglo
+    if ((opcion - 1) == nivel.opcionGanadora) {
+        // Primero jugar minijuego si existe
         if (config.activar[indiceNivel]) {
             switch (config.tipo[indiceNivel]) {
                 case 1: minijuegoTesoro(); break;
                 case 2: minijuegoSimon(); break;
                 case 3: minijuegoContar(); break;
                 case 4: minijuegoMemoria(); break;
-                default: break; // ningún minijuego
+                default: break;
             }
         }
-                return true;  //  Pasó el nivel
+        
+        // Ahora mostrar y agregar premio
+        cout << "¡Ganaste el premio: " << nivel.premio << "!\n";
+        agregarPremio(nivel.premio);
 
+        return true;  //  Pasó el nivel
     } else {
-        cout << "Opción incorrecta. ¡Debes intentarlo de nuevo!\n";
-                return false; // Repetir nivel
-
+        return false; //  Repetir nivel
     }
 }
 //funcion de jugar aventura 
@@ -475,7 +476,7 @@ void jugarAventura(const Aventura& aventura, const ConfigMinijuegos& config) {
         bool pasoNivel = false;
         do {
             pasoNivel = jugarNivel(aventura.niveles[i], config, i);
-        } while (!pasoNivel); // 🔁 Repite hasta que el jugador acierte
+        } while (!pasoNivel); //  Repite hasta que el jugador acierte
        // jugarNivel(aventura.niveles[i]);
       // jugarNivel(aventura.niveles[i], config, i); //  Pasas config y el índice actual
 
