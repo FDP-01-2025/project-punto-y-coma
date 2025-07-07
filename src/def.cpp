@@ -59,7 +59,6 @@ Aventura nerysia = {
 
 }
     
-    
 
 };
 
@@ -68,24 +67,30 @@ Aventura nerysia = {
 Aventura infernum = {
     "Infernum (Mundo de Fuego)",
     {
-        {"Nivel 1 - Llanuras de ceniza: El suelo tiembla bajo tus pies, unos lagartos ígneos han comenzado a atacar caravanas de comerciantes de roca volcánica. ¿Que haces para salvar a los comerciantes?",
-             {{"Tratas de hablar con los lagartos", "Los lagartos no entienden y se alteran aún más."},
-              {"Les arrojas agua congelada", "Los lagartos se enfurecen y comienzan atacar a todos."},
-              {"Los distraes con una antorcha brillante", "Los lagartos se confunden con la luz y se quedan quietos, salvando a los comerciantes."}},
-        "Espada de lava", 2},
+           "Infernum (Fire World)",
+    {
+        {"Level 1 - Ashen Plains: The ground trembles beneath your feet. Fiery lizards have started attacking caravans of volcanic rock traders. What do you do to save the merchants?",
+             {{"You try to talk to the lizards", "The lizards don’t understand and become even more agitated."},
+              {"You throw frozen water at them", "The lizards become enraged and start attacking everyone."},
+              {"You distract them with a bright torch", "The lizards are confused by the light and freeze, saving the merchants."}},
+        "Lava Sword", 2},
 
-        {"Nivel 2 - Cañón del Trueno Ardiente: Encuentras una grieta con vapor envenenado que está afectando a los pájaros de lava. Algunos te rodean confundidos. ¿Que decision tomas para ayudar a los pajaros?",
-             {{"Tapa la grieta con rocas", "La presión al taparla provoca una explosión y todos mueren." },
-             {"Guias a los pájaros fuera del humo", "Salvas a los pajaros y te agradecen con un pan para recargar energias."},
-             {"Los enfrentas, pensando que son hostiles", "Los pajaros te atacan."}},
-        "corazon de fuego encantado", 1},
 
-        {"Nivel 3 - Volcán Dormido: Subes a un volcán para investigar su energía. Descubres una grieta que lleva a una caverna secreta, pero está protegida por golems de magma. ¿Como accedes? a la caverna secreta?",
-             {{"Imitas los movimientos de los golems", "Te confunden con uno de ellos y te dejan pasar."},
-             {"Te camuflas con barro volcánico", "El barro te quema y mueres."},
-             { "Esperas a que se duerman para pasar", "Te duermes y los golems te atrapan"}},
-        "Cetro de magma", 0}, 
+                {"Level 2 - Canyon of Burning Thunder: You find a crack emitting poisonous steam that is affecting the lava birds. Some surround you in confusion. What do you do to help the birds?",
+             {{"Block the crack with rocks", "The pressure causes an explosion and everyone dies." },
+             {"Guide the birds out of the smoke", "You save the birds and they thank you with a bread to regain energy."},
+             {"Confront them, thinking they're hostile", "The birds attack you."}},
+        "Enchanted Fire Heart", 1},
 
+
+       {"Level 3 - Sleeping Volcano: You climb a volcano to investigate its energy. You discover a crack leading to a secret cavern, but it is guarded by magma golems. How do you access the secret cavern?",
+             {{"Mimic the golems’ movements", "They mistake you for one of them and let you pass."},
+             {"Camouflage yourself with volcanic mud", "The mud burns you and you die."},
+             {"Wait until they fall asleep to sneak past", "You fall asleep and the golems catch you."}},
+        "Magma Scepter", 0}, 
+
+
+        
         {"Nivel 4 - Río de Lava Eterna: Para cruzar al siguiente territorio, debes atravesar un río de lava sobre plataformas que se derriten con el tiempo. ¿Como logras cruzar el rio?",
              {{"Un caparazón de escarabajo ignífugo", "Te proteges de la lava y cruzas sin problemas"},
              {"Saltar lo más rapido posible", "Te quemas porque no alcanzas a saltar."},
