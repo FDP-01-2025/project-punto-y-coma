@@ -10,7 +10,7 @@ string nombreJugador;
 
 // Defined adventures
 // adventure one
-Adventure nerysia = {
+Aventura nerysia = {
     "Nerysia (Water World)",
     {
         // Level 1 – Coral Reef
