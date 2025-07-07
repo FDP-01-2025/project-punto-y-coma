@@ -13,6 +13,7 @@ int main() {
         cout << "2. Infernum (Fire World)\n";
         cout << "3. Thornia (Forgotten World)\n";
         cout << "4. Show progress\n";
+        cout << "5. Umbra (Shadow Realm) [Unlocks with all rewards]\n";
         cout << "0. Exit\n";
         cout << "Option: ";
         cin >> input;
@@ -47,11 +48,15 @@ int main() {
             case 4:
                 readProgress();
                 break;
+            case 5:
+                tryPlayUmbra();
+                break;
+                
             case 0:
                 cout << "See you soon, " << playerName << "!!!!!\n";
                 break;
             default:
-                cout << "Invalid option. Choose between 0 and 4.\n";
+                cout << "Invalid option. Choose between 0 and 5.\n";
         }
     } while (option != 0);
 

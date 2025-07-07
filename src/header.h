@@ -72,5 +72,7 @@ void minigamechooseDoor();
 extern Adventure nerysia;
 extern Adventure infernum;
 extern Adventure thornia;
+extern Adventure umbra;
+void tryPlayUmbra();
 
 #endif

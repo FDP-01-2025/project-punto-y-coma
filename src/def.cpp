@@ -150,6 +150,51 @@ Adventure thornia = {// declare the adventure to which we are going to add data
           "Totem of Immortality", 1 }
 }
 };
+Adventure umbra = {
+    "Umbra (Shadow Realm)",
+    {
+        { "You've entered the forgotten temple of shadows. A door requires a key shaped like a pearl. What do you use?",
+          {
+              {"Use the Ancient Coral Fragment", "The door rejects it and shocks you."},
+              {"Use the Luminous Pearl", "The door unlocks with a deep hum."},
+              {"Force the door open", "It releases shadow gas. You pass out."}
+          },
+          "Shadow Cloak", 1 },
+
+        { "A massive crystal with fire swirling inside blocks your path. It reacts to volcanic energy.",
+          {
+              {"Ignore it and move around", "The fire reaches you. You get burned."},
+              {"Use the Colossus Amulet", "The crystal cracks slightly, but remains solid."},
+              {"Use the Lava Sword", "The sword melts part of the crystal and reveals a narrow passage."}
+          },
+          "Cracked Ember Crystal", 2 },
+
+        { "You find a pedestal with a riddle: 'Ink binds truth in darkness.' Only one item can activate it.",
+          {
+              {"Heart of Nerysia", "It reacts but nothing happens."},
+              {"Ancient Ink", "The pedestal glows. A hidden door opens."},
+              {"Worn Axe", "Nothing changes."}
+          },
+          "Truth Medallion", 1 },
+
+        { "You're attacked by a shadow beast immune to normal weapons.",
+          {
+              {"Throw the Totem of Immortality", "It freezes the beast for a moment and you escape."},
+              {"Use the Magma Scepter", "It burns through but the beast regenerates."},
+              {"Run away", "It catches you immediately."}
+          },
+          "Shadow Beast Fang", 0 },
+
+        { "At the final chamber, your path is blocked by a memory guardian who asks: 'What connects all your victories?'",
+          {
+              {"Show all rewards", "The guardian nods but doesn't move."},
+              {"Use the Current Amulet", "The winds guide your memories and the path opens."},
+              {"Use the Unknown Book", "The guardian reads it, but remains still."}
+          },
+          "Memory Crystal", 1 }
+    }
+};
+
 
 
 // Functions
@@ -729,6 +774,16 @@ void tryPlayAdventure(const Adventure& adventure, int adventureIndex, const Mini
          saveProgress();
     }
 }
+void tryPlayUmbra() {
+    if (rewardCount < 15) {
+        cout << "\nYou must collect all rewards from Nerysia, Infernum, and Thornia to unlock this secret world.\n";
+        return;
+    }
+
+    cout << "\n--- UMBRA: FINAL ADVENTURE UNLOCKED ---\n";
+    playAdventure(umbra, { {false, false, false, false, false}, {0, 0, 0, 0, 0} }); // No minigames, only logic with rewards
+}
+
 
 // Introduction function
 void gameIntroduction() {
