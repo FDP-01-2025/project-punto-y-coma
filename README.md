@@ -115,7 +115,7 @@ Clone this repository to your local machine, on the desktop:
    ```bash
    git clone https://github.com/FDP-01-2025/project-punto-y-coma.git
 
-Aquí tienes esa línea traducida al inglés:
+
 
 **3. Locate the file in the previously cloned folder named \[project-punto-y-coma].**
 
@@ -128,7 +128,7 @@ Aquí tienes esa línea traducida al inglés:
    ```bash
    g++ -o chronocosmos main.cpp
 
-6. Ejecutalo y ¡DIVIERTETE!
+6. Run it and HAVE FUN!
    ```bash
    ./chronocosmos.exe
 
