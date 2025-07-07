@@ -53,9 +53,9 @@ The game is fully interactive through the console. It focuses on narrative decis
 - `struct Adventure`: Contains the name of the adventure and its levels.
 
 ### ✔️ Arreglos
-- Arrays Array of decisions per level:  `Decision decisiones[3]`
-- Array of levels per adventure: `Nivel niveles[5]`
-- Array of rewards: `string premiosJugador[20]`
+- Arrays Array of decisions per level:  `Decision decisions[3]`
+- Array of levels per adventure: `Level levels[5]`
+- Array of rewards: `string playerRewards[20]`
 
 ### ✔️ File
 - Functions to **save** and **load** progress using `ofstream` y `ifstream`.
@@ -64,21 +64,21 @@ The game is fully interactive through the console. It focuses on narrative decis
 
 **Main functions:**
 
-- agregarPremio()
+- addReward()
 
-- mostrarPremios()
+- showRewards()
 
-- jugarNivel()
+- playLevel()
 
-- jugarAventura()
+- playAdventure()
 
-- intentarJugarAventura()
+- tryPlayAdventure()
 
-- introduccionJuego()
+- gameIntroduction()
 
-- guardarProgreso()
+- saveProgress()
 
-- leerProgreso()
+- readProgress()
 
 ### ✔️ Modularization
 
