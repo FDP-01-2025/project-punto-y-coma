@@ -123,7 +123,7 @@ The game is fully interactive through the console. It focuses on narrative decis
 
 - **Team Name: PUNTO Y COMA** 
 
-### ✏️ team members
+### ✏️ Team Members
 
 1. **LUCIA GABRIELA NAVARRO MARIN**: 00109525
 
