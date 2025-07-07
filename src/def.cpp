@@ -452,9 +452,9 @@ bool jugarNivel(const Nivel& nivel, const ConfigMinijuegos& config, int indiceNi
         // Primero jugar minijuego si existe
         if (config.activar[indiceNivel]) {
             switch (config.tipo[indiceNivel]) {
-                case 1: minijuegoTesoro(); break;
-                case 2: minijuegoSimon(); break;
-                case 3: minijuegoContar(); break;
+                case 1: minigameFishing(); break;
+                case 2: minigameLostObjects(); break;
+                case 3: minigameMagma(); break;
                 case 4: minijuegoMemoria(); break;
                 default: break;
             }

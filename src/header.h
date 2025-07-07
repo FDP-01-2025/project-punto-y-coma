@@ -61,9 +61,9 @@ ConfigMinijuegos obtenerConfigInfernum();
 ConfigMinijuegos obtenerConfigThornia();
 
 // Declaración de minijuegos
-void minijuegoMemoria();
-void minijuegoTesoro();
-void minijuegoSimon();
+void minigameFishing();
+void minigameLostObjects();
+void minigameMagma();
 void minijuegoContar();
 
 // Declaración de aventuras
