@@ -38,28 +38,25 @@ Adventure nerysia = {
           },
           "Ancient Coral Fragment" , 2 },
 
-
-
-  
-
-
-        // Nivel 4 – Campos de Corrientes Locas
-        { "Una corriente violenta te arrastra, y debes elegir con qué criatura aliarte para que te ayude a nadar a salvo.",
+         // Level 4 – Fields of Wild Currents
+        { "A violent current pulls you, and you must choose which creature to ally with to help you swim safely.",
           {
-              {"Un calamar gigante", "Te ayuda, pero te exige un favor futuro."},
-              {"Un grupo de tortugas marinas", "Te transportan con calma y seguridad."},
-              {"Un delfín solitario muy veloz", "Llegas rápido, pero te separas del grupo."}
+              {"A giant squid", "It helps you, but demands a favor in return."},
+              {"A group of sea turtles", "They transport you calmly and safely."},
+              {"A very fast lone dolphin", "You arrive quickly but get separated from the group."}
           },
-          "Amuleto de corriente", 3 },
+          "Current Amulet", 3 },
 
-        // Nivel 5 – El Palacio de la Corrupción
-        { "Llegas al corazón de la oscuridad: una criatura gigantesca hecha de petróleo y sombras está corrompiendo el agua.\n¿Cómo decides enfrentarlo?",
+
+       // Level 5 – The Palace of Corruption
+        { "You reach the heart of darkness: a gigantic creature made of oil and shadows is corrupting the water.\nHow do you decide to face it?",
           {
-              {"Usas una perla sagrada que encontraste en el camino", "La criatura se debilita y retrocede."},
-              {"Invocas a todas las criaturas que ayudaste antes", "Luchan contigo y logran contenerla."},
-              {"Usas tu propia energía vital como último recurso", "La criatura desaparece, pero quedas gravemente herido."}
+              {"You use a sacred pearl you found on the way", "The creature weakens and retreats."},
+              {"You summon all the creatures you helped before", "They fight with you and manage to contain it."},
+              {"You use your own life energy as a last resort", "The creature disappears, but you're left badly injured."}
           },
-          "Corazón de Nerysia",4}
+          "Heart of Nerysia", 1 }
+
 }
     
     
