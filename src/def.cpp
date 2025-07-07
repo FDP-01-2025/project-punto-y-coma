@@ -54,6 +54,7 @@ Aventura nerysia = {
               {"You use a sacred pearl you found on the way", "The creature weakens and retreats."},
               {"You summon all the creatures you helped before", "They fight with you and manage to contain it."},
               {"You use your own life energy as a last resort", "The creature disappears, but you're left badly injured."}
+
           },
           "Heart of Nerysia", 1 }
 
@@ -73,24 +74,12 @@ Aventura infernum = {
              {{"You try to talk to the lizards", "The lizards don’t understand and become even more agitated."},
               {"You throw frozen water at them", "The lizards become enraged and start attacking everyone."},
               {"You distract them with a bright torch", "The lizards are confused by the light and freeze, saving the merchants."}},
-        "Lava Sword", 2},
+             "Lava Sword", 2},
+
+                
 
 
-                {"Level 2 - Canyon of Burning Thunder: You find a crack emitting poisonous steam that is affecting the lava birds. Some surround you in confusion. What do you do to help the birds?",
-             {{"Block the crack with rocks", "The pressure causes an explosion and everyone dies." },
-             {"Guide the birds out of the smoke", "You save the birds and they thank you with a bread to regain energy."},
-             {"Confront them, thinking they're hostile", "The birds attack you."}},
-        "Enchanted Fire Heart", 1},
 
-
-       {"Level 3 - Sleeping Volcano: You climb a volcano to investigate its energy. You discover a crack leading to a secret cavern, but it is guarded by magma golems. How do you access the secret cavern?",
-             {{"Mimic the golems’ movements", "They mistake you for one of them and let you pass."},
-             {"Camouflage yourself with volcanic mud", "The mud burns you and you die."},
-             {"Wait until they fall asleep to sneak past", "You fall asleep and the golems catch you."}},
-        "Magma Scepter", 0}, 
-
-
-        
         {"Nivel 4 - Río de Lava Eterna: Para cruzar al siguiente territorio, debes atravesar un río de lava sobre plataformas que se derriten con el tiempo. ¿Como logras cruzar el rio?",
              {{"Un caparazón de escarabajo ignífugo", "Te proteges de la lava y cruzas sin problemas"},
              {"Saltar lo más rapido posible", "Te quemas porque no alcanzas a saltar."},
