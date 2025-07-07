@@ -8,38 +8,40 @@ string premiosJugador[20];
 int cantidadPremios = 0;
 string nombreJugador;
 
-// Aventuras definidas
-
-//aventura uno
-Aventura nerysia = {
-    "Nerysia (Mundo de Agua)",
+// Defined adventures
+// adventure one
+Adventure nerysia = {
+    "Nerysia (Water World)",
     {
-        // Nivel 1 – Arrecife de Coral
-        { "Los peces globo han encontrado su hogar destruido. Están furiosos y atacan la aldea de los pulpos.\n¿Qué arma le recomiendas usar?",
+        // Level 1 – Coral Reef
+        { "The pufferfish have found their home destroyed. They are furious and are attacking the octopus village.\nWhat weapon do you recommend using?",
           { 
-              {"Sus espinas", "Los peces se confunden y dejan de atacar por un momento."},
-              {"Una espada", "La espada no sirve bajo el agua, pierdes tiempo."},
-              {"La tinta de los pulpos", "La tinta los ciega y logran huir a tiempo."}
+              {"Their spines", "The fish get confused and stop attacking for a moment."},
+              {"A sword", "The sword is useless underwater, you waste time."},
+              {"The octopus ink", "The ink blinds them and they manage to escape in time."}
           },
-          "Tinta ancestral", 1  },
-
-        // Nivel 2 – Cuevas de Algas Eternas
-        { "Mientras avanzas por una cueva cubierta de algas brillantes, escuchas un canto hipnótico. Te das cuenta de que viene de unas sirenas oscuras que intentan distraerte para robarte tu energía vital.",
+          "Ancient Ink", 1 },
+          // Level 2 – Eternal Algae Caves
+        { "As you move through a cave covered in glowing algae, you hear a hypnotic singing. You realize it comes from dark mermaids trying to distract you to steal your life energy.",
           {
-              {"Sigues el canto, puede que te lleven a una pista", "Te hipnotizan y pierdes energía."},
-              {"Te tapas los oídos con algas", "Resistes el canto y avanzas con éxito."},
-              {"Lanzas una piedra hacia el sonido para distraerlas", "Las confundes y logras escapar sin ser visto."}
+              {"You follow the singing, maybe it leads to a clue", "You get hypnotized and lose energy."},
+              {"You cover your ears with algae", "You resist the song and move forward successfully."},
+              {"You throw a stone toward the sound to distract them", "You confuse them and manage to escape unseen."}
           },
-          "Perla luminosa", 2 },
-
-        // Nivel 3 – Fosa Abisal del Olvido
-        { "Llegas a una zona tan profunda que la luz desaparece. Encuentras un pez anciano encerrado en una jaula de coral negro que suplica por ayuda.",
+          "Luminous Pearl", 2 },
+          // Level 3 – Abyssal Trench of Oblivion
+        { "You reach an area so deep that light disappears. You find an old fish trapped in a black coral cage begging for help.",
           {
-              {"Lo liberas sin preguntar", "Era una trampa, el pez te traiciona."},
-              {"Le haces preguntas antes de decidir", "El pez demuestra su sabiduría y te entrega un fragmento antiguo."},
-              {"Lo ignoras y sigues tu camino", "Te sientes culpable, pero te ahorras problemas."}
+              {"You free it without asking", "It was a trap, the fish betrays you."},
+              {"You ask questions before deciding", "The fish shows wisdom and gives you an ancient fragment."},
+              {"You ignore it and move on", "You feel guilty, but avoid trouble."}
           },
-          "Fragmento de coral antiguo", 2 },
+          "Ancient Coral Fragment" , 2 },
+
+
+
+  
+
 
         // Nivel 4 – Campos de Corrientes Locas
         { "Una corriente violenta te arrastra, y debes elegir con qué criatura aliarte para que te ayude a nadar a salvo.",
