@@ -64,35 +64,45 @@ Aventura nerysia = {
 };
 
 
-//aventura dos
-Aventura infernum = {
-
-           "Infernum (Fire World)",
+//aventur two
+Adventure infernum = {
+    "Infernum (Fire World)",
     {
         {"Level 1 - Ashen Plains: The ground trembles beneath your feet. Fiery lizards have started attacking caravans of volcanic rock traders. What do you do to save the merchants?",
-             {
-                {"You try to talk to the lizards", "The lizards don’t understand and become even more agitated."},
+             {{"You try to talk to the lizards", "The lizards don’t understand and become even more agitated."},
               {"You throw frozen water at them", "The lizards become enraged and start attacking everyone."},
               {"You distract them with a bright torch", "The lizards are confused by the light and freeze, saving the merchants."}},
-             "Lava Sword", 2},
+        "Lava Sword", 2},
 
-                
+        {"Level 2 - Canyon of Burning Thunder: You find a crack emitting poisonous steam that is affecting the lava birds. Some surround you in confusion. What do you do to help the birds?",
+             {{"Block the crack with rocks", "The pressure causes an explosion and everyone dies." },
+             {"Guide the birds out of the smoke", "You save the birds and they thank you with a bread to regain energy."},
+             {"Confront them, thinking they're hostile", "The birds attack you."}},
+        "Enchanted Fire Heart", 1},
 
+        {"Level 3 - Sleeping Volcano: You climb a volcano to investigate its energy. You discover a crack leading to a secret cavern, but it is guarded by magma golems. How do you access the secret cavern?",
+             {{"Mimic the golems’ movements", "They mistake you for one of them and let you pass."},
+             {"Camouflage yourself with volcanic mud", "The mud burns you and you die."},
+             {"Wait until they fall asleep to sneak past", "You fall asleep and the golems catch you."}},
+        "Magma Scepter", 0}, 
 
+        {"Level 4 - River of Eternal Lava: To reach the next area, you must cross a lava river over platforms that melt over time. How do you cross the river?",
+             {{"Use a fireproof beetle shell", "You protect yourself from the lava and cross without issues."},
+             {"Jump as quickly as po
+            sible", "You get burned because you don’t jump fast enough."},
+             {"Use an ancient ice shard to freeze parts of the lava", "The ice melts too quickly and you fall into the river."}},
+       "Volcanic Rock Shield", 0},
 
-        {"Nivel 4 - Río de Lava Eterna: Para cruzar al siguiente territorio, debes atravesar un río de lava sobre plataformas que se derriten con el tiempo. ¿Como logras cruzar el rio?",
-             {{"Un caparazón de escarabajo ignífugo", "Te proteges de la lava y cruzas sin problemas"},
-             {"Saltar lo más rapido posible", "Te quemas porque no alcanzas a saltar."},
-             {"Usar un fragmento de hielo antiguo para congelar partes de la lava", "El hielo se derrite muy rapido y caes al rio"}},
-       "Escudo de roca volcanica", 0},
-
-       {"Nivel 5 - Núcleo del Coloso Ardiente: En lo más profundo del mundo, te enfrentas al Coloso Ardiente, una criatura que parece hecha del núcleo del planeta. Está enloquecido. ¿Como derrotas al coloso?",
-             {{"Usas un mineral especial que absorbe calor", "El mineral es muy debil y se derite."},
-              {"Le haces recordar quién era antes con un artefacto antiguo", "El coloso se conmueve y se duerme en paz."},
-              {"Intentas luchar contra el coloso", "El coloso es demasiado fuerte y te aplasta"}},
-        "Amuleto del coloso", 1},
+       {"Level 5 - Core of the Burning Colossus: Deep in the world, you face the Burning Colossus, a creature that seems made from the planet’s core. It is enraged. How do you defeat the colossus?",
+             {{"Use a special mineral that absorbs heat", "The mineral is too weak and melts."},
+              {"Help it remember who it once was with an ancient artifact", "The colossus is moved and falls asleep peacefully."},
+              {"Try to fight the colossus", "The colossus is too strong and crushes you."}},
+        "Colossus Amulet", 1},
      }                  
 };
+
+
+        
 
 Aventura thornia = {//declaramos el la aventura a la que vamos a añadirle datos
     "thornia (El mundo olvidado)",//nombre de la aventura como en la estructura pide
