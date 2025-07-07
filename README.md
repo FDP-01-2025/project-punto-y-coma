@@ -62,47 +62,46 @@ struct Nivel: Contains the situation, decisions, reward, and the winning option.
 
 struct Aventura: Contains the name of the adventure and its levels.
 
-### ✔️ Arreglos
-- Arreglo de decisiones por nivel: `Decision decisiones[3]`
-- Arreglo de niveles por aventura: `Nivel niveles[5]`
-- Arreglo de premios: `string premiosJugador[20]`
+✔️ Arrays
+Array of decisions per level: Decision decisions[3]
 
-### ✔️ Archivos
-- Funciones para **guardar** y **leer** progreso usando `ofstream` y `ifstream`.
+Array of levels per adventure: Nivel niveles[5]
 
-### ✔️ Funciones
+Array of rewards: string premiosJugador[20]
 
-**Funciones principales:**
+✔️ File Handling
+Functions to save and load progress using ofstream and ifstream.
 
-- agregarPremio()
+✔️ Functions
+Main functions:
 
-- mostrarPremios()
+agregarPremio()
 
-- jugarNivel()
+mostrarPremios()
 
-- jugarAventura()
+jugarNivel()
 
-- intentarJugarAventura()
+jugarAventura()
 
-- introduccionJuego()
+intentarJugarAventura()
 
-- guardarProgreso()
+introduccionJuego()
 
-- leerProgreso()
+guardarProgreso()
 
-### ✔️ Modularización
+leerProgreso()
 
-- Archivo header (header.h): contiene declaraciones de estructuras y funciones.
+✔️ Modularization
+Header file (header.h): contains structure and function declarations.
 
-- Archivo definiciones (def.cpp): contiene implementaciones completas.
+Definitions file (def.cpp): contains full implementations.
 
-- Archivo principal (main.cpp): controla el juego.
+Main file (main.cpp): controls the game.
 
-# ⚙️ Consideraciones técnicas
+⚙️ Technical Considerations
+🛠️ Dependencies
 
-**🛠️ Dependencias**
-
-- Lenguaje: C++
+Language: C++
 
 - Librerías: `<iostream>`, `<fstream>`
 
