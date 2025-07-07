@@ -4,71 +4,73 @@
 #include <iostream>
 using namespace std;
 
-// Estructura para decisiones
+// Structure for decisions
 struct Decision {
-    string texto;
-    string consecuencia;
+    string text;
+    string consequence;
 };
 
-// Estructura para un nivel
-struct Nivel {
-    string situacion;
-    Decision decisiones[3];
-    string premio;
-    int opcionGanadora; // índice (0, 1, 2)
+// Structure for a level
+struct Level {
+    string situation;
+    Decision decisions[3];
+    string reward;
+    int winningOption; // index (0, 1, 2)
 };
 
-// Estructura para aventura
-struct Aventura {
-    string nombre;
-    Nivel niveles[5];
+// Structure for adventure
+struct Adventure {
+    string name;
+    Level levels[5];
 };
 
-// Configuración para minijuegos: activar y tipo por nivel (5 niveles)
-struct ConfigMinijuegos {
-    bool activar[5];  // true si hay minijuego en ese nivel
-    int tipo[5];      // tipo de minijuego: 1=Memoria, 2=Tesoro, 3=Simon, 4=Contar
+// Configuration for minigames: enable and type per level (5 levels)
+struct MinigameConfig {
+    bool activate[5];  // true if there is a minigame at that level
+    int type[7];       // minigame 1: fishing 2:lostobject 3:hazel 4:hazel 5:duel 6:door 7: chest
 };
 
-// Variables globales
+// Global variables
 
-extern bool aventurasJugadas[3];
-extern string premiosJugador[20];
-extern int cantidadPremios;
-extern string nombreJugador;
+extern bool adventuresPlayed[3];
+extern string playerRewards[20];
+extern int rewardCount;
+extern string playerName;
 
-// Declaración de funciones
-//funcion agregar premio
-void agregarPremio(string premio);
-//funcion mostrar premios
-void mostrarPremios();
-//funcion jugar nivel
-bool jugarNivel(const Nivel& nivel, const ConfigMinijuegos& config, int indiceNivel);
-//void jugarNivel(const Nivel& nivel);
-//funcion jugar aventura
-void jugarAventura(const Aventura& aventura, const ConfigMinijuegos& config);
-//funcion intentar jugar aventura para validar las veces que ha jugado una aventura
-void intentarJugarAventura(const Aventura& aventura, int indiceAventura, const ConfigMinijuegos& config);
-//funcion introduccion al juego
-void introduccionJuego();
-//funcion para guardar proceso y hacer uso de archivos
-void guardarProgreso(string nombre, string aventuras, string premios);
-//leemos progreso y lo mandamos a llamar
-void leerProgreso();
-//funciones para configurar los minijuegos
-ConfigMinijuegos obtenerConfigNerysia();
-ConfigMinijuegos obtenerConfigInfernum();
-ConfigMinijuegos obtenerConfigThornia();
+// Function declarations
+//function to add reward
+void addReward(string reward);
+//function to show rewards
+void showRewards();
+//function to play level
+bool playLevel(const Level& level, const MinigameConfig& config, int levelIndex);
+//function to play adventure
+void playAdventure(const Adventure& adventure, const MinigameConfig& config);
+//function to try playing adventure, to validate how many times an adventure has been played
+void tryPlayAdventure(const Adventure& adventure, int adventureIndex, const MinigameConfig& config);
+//function for game introduction
+void gameIntroduction();
+//function to save progress using files
+void saveProgress();
+//read progress and call it
+void readProgress();
+//functions to configure the minigames
+MinigameConfig getConfigNerysia();
+MinigameConfig getConfigInfernum();
+MinigameConfig getConfigThornia();
 
-// Declaración de minijuegos
-void minijuegoMemoria();
-void minijuegoTesoro();
-void minijuegoSimon();
-void minijuegoContar();
+// Minigame declarations
+void minigameFishing();
+void minigameLostObjects();
+void minigameBrazas();
+void minigameMagma();
+string minigameDuel();
+void minigameopenChest();
+void minigamechooseDoor();
 
-// Declaración de aventuras
-extern Aventura nerysia;
-extern Aventura infernum;
-extern Aventura thornia;
+// Adventure declarations
+extern Adventure nerysia;
+extern Adventure infernum;
+extern Adventure thornia;
 
 #endif
