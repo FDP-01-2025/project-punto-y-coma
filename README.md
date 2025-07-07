@@ -1,69 +1,68 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/mi1WNrHU)
-# Proyecto de C++ 🌌 ChronoCosmos
 
-## Descripción del Proyecto
+# Project C++ 🌌 ChronoCosmos
 
-Este proyecto es un juego interactivo en el cual el jugador debe tomar decisiones en base a distintas aventuras, las situaciones deben ser resueltas correctamente para avanzar de nivel. Cada nivel representa un nuevo desafío que el jugador debe superar eligiendo entre diferentes opciones. Al avanzar con éxito los niveles, el jugador desbloquea “recompensas”. El objetivo final es completar todos los niveles con éxito y superar las situaciones de cada aventura.
+## Project Description
 
-## 🎮 Nombre del juego
+This project is an interactive game in which the player must make decisions based on various adventures. Situations must be resolved correctly in order to advance to the next level. Each level represents a new challenge that the player must overcome by choosing between different options. As players successfully progress through the levels, they unlock “rewards.” The ultimate goal is to complete all levels successfully and overcome the situations in each adventure.
+
+## 🎮 Game Title 
 **ChronoCosmos**
 
-## 🌟 Temática y ambientación
-ChronoCosmos es un juego narrativo de aventuras que transporta al jugador a universos fantásticos. Cada universo tiene una temática única:
+## 🌟 Theme and Setting
+ChronoCosmos is a narrative adventure game that transports the player to fantastic universes. Each universe has a unique theme:
 
-- **Nerysia**: Un mundo marino pacífico amenazado por una entidad oscura.
-- **Infernum**: Un reino volcánico en peligro rodeado de amenazas y llamas asfixiantes.
-- **Thornia**: Un mundo sumergido en las penumbras del oscuro olvido y memorias perdias.
+- **Nerysia**: A peaceful underwater world threatened by a dark entity.
+- **Infernum**: A volcanic kingdom in danger, surrounded by threats and suffocating flames.
+- **Thornia**: A world engulfed in the shadows of dark oblivion and lost memories. The player must restore balance in each universe by making key decisions that will lead them down different paths.
 
-El jugador debe restaurar el equilibrio de cada universo tomando decisiones clave que lo llevarán 
-por diferentes caminos.
+The player must restore balance to each universe by making key decisions that will lead them down different paths.
 
-## 📸 Recursos visuales
+## 📸 Visual Resource
 
 - 🌊 **Nerysia (Mundo de Agua)**: ![Nerysia](resources/nerysia1.png)
 - 🔥 **Infernum (Mundo de Fuego)**: ![Infernum](resources/infernum2.png)
 - ⏳ **Thornia (Mundo olvidado)**: ![Thornia](resources/thornia1.png)
 
-Estas imágenes son referencias conceptuales para imaginar los mundos mientras juegas.
+These images are conceptual references to help imagine the worlds while playing.
 
+## ⚔️ Main Mechanics
+- The player enters their name and selects an adventure.
+- Each adventure contains **5 levels**, each with a critical situation.
+- At each level, **3 options** are presented, each with different consequences.
+- If the corrcta option is chosen, the player wins a **reward**.
+- Earned rewards and played adventures are stored and can be reviewed at any time.
+- Adventures can only be played **once**.
 
-## ⚔️ Mecánica principal
-- El jugador ingresa su nombre y selecciona una aventura.
-- Cada aventura contiene **5 niveles**, cada uno con una situación crítica.
-- En cada nivel se presentan **3 opciones** con consecuencias diferentes.
-- Si elige la opción correcta, gana un **premio**.
-- Los premios obtenidos y aventuras jugadas se almacenan para que puedan revisarse en cualquier momento.
-- Las aventuras solo pueden jugarse **una vez**.
+## 📄 Game Rules
+- Only **one person can play**
+- You must choose a world to start the adventure and **cannot replay the same adventure twice.**
+- Each adventure has **5 levels** 
+- Each level presents a situation with only **3 available options** you must choose the best one.
+- The option you choose may lead you to a different outcome **choose wisely**
+- At the end of each adventure, **you can review** the visited worlds and all your progress, as well as the rewards you've earned so far.
 
-## 📄 Reglas del juego
-- Solo **una persona puede jugar**
-- Debes elegir un mundo para iniciar la aventura **no puedes volver a jugar la misma aventura dos veces**
-- Cada aventura tiene **5 niveles** 
-- Cada nivel presenta una situación en la que solo tienes **3 opciones** disponibles, deberás escoger la mejor
-- La opción que eligas puede llevarte a un destino distinto **escoge con sabiduría**
-- Al finalizar cada aventura **puedes revisar** los mundos visitados y todo tu progreso, asi como los premios que has ganado hasta el momento
+## 🎮 Gameplay
+The game is fully interactive through the console. It focuses on narrative decision-making, encouraging exploration and reasoning.
 
-## 🎮 Jugabilidad
-El juego es completamente interactivo desde la consola. Se centra en decisiones narrativas, fomentando la exploración y el razonamiento.
+## 💡 Application of Topics Covered in Class
 
-## 💡 Aplicación de temas vistos en clase
-
-### ✔️ Estructuras
-- `struct Decision`: Guarda el texto de la opción y su consecuencia.
-- `struct Nivel`: Contiene la situación, decisiones, premio y la opción ganadora.
-- `struct Aventura`: Contiene el nombre de la aventura y los niveles.
+### ✔️ Structures
+- `struct Decision`: Stores the text of the option and its consequence.
+- `struct Level`: Contains the situation, decisions, reward, and the winning option.
+- `struct Adventure`: Contains the name of the adventure and its levels.
 
 ### ✔️ Arreglos
-- Arreglo de decisiones por nivel: `Decision decisiones[3]`
-- Arreglo de niveles por aventura: `Nivel niveles[5]`
-- Arreglo de premios: `string premiosJugador[20]`
+- Arrays Array of decisions per level:  `Decision decisiones[3]`
+- Array of levels per adventure: `Nivel niveles[5]`
+- Array of rewards: `string premiosJugador[20]`
 
-### ✔️ Archivos
-- Funciones para **guardar** y **leer** progreso usando `ofstream` y `ifstream`.
+### ✔️ File
+- Functions to **save** and **load** progress using `ofstream` y `ifstream`.
 
-### ✔️ Funciones
+### ✔️ Functions
 
-**Funciones principales:**
+**Main functions:**
 
 - agregarPremio()
 
@@ -81,49 +80,50 @@ El juego es completamente interactivo desde la consola. Se centra en decisiones 
 
 - leerProgreso()
 
-### ✔️ Modularización
+### ✔️ Modularization
 
-- Archivo header (header.h): contiene declaraciones de estructuras y funciones.
+- Header file (header.h): contains structure and function declarations.
 
-- Archivo definiciones (def.cpp): contiene implementaciones completas.
+- Definitions file (def.cpp): contains full implementations.
 
-- Archivo principal (main.cpp): controla el juego.
+- Main file (main.cpp): controls the game.
 
-# ⚙️ Consideraciones técnicas
+# ⚙️  Technical Considerations
 
-**🛠️ Dependencias**
+**🛠️ Dependencies**
 
 - Lenguaje: C++
 
-- Librerías: `<iostream>`, `<fstream>`
+- Libraries: `<iostream>`, `<fstream>`
 
-- No requiere librerías externas adicionales.
+- No additional external libraries are required.
 
-**💻 Cómo compilar**
 
-1. Debes tener un compilador C++, por ejemplo g++.
+**💻 How to Compile**
 
-2. Clona este repositorio en tu máquina local, en el escritorio:
+1. You must have a C++ compiler installed, such as g++.
+
+2. Clone this repository to your local machine, on the desktop:
    ```bash
    git clone https://github.com/FDP-01-2025/project-punto-y-coma.git
 
-3. Busca el archivo en la carpeta previamente clonada bajo el nombre [project-punto-y-coma].
+3. Locate the file in the previously cloned folder named [project-punto-y-coma]
 
-4. Ábrelo en Visual Sutdio Code.
+4. Open in it Visual Sutdio Code.
 
-5. Crea una nueva terminal y escribe:
+5. Create a new terminal and type:
    ```bash
    g++ -o chronocosmos main.cpp
 
-6. Ejecutalo y ¡DIVIERTETE!
+6. Run it and HAVE FUN
    ```bash
    ./chronocosmos.exe
 
-## 🔨 Equipo
+## 🔨 Team
 
-- **Nombre del equipo: PUNTO Y COMA** 
+- **Team Name: PUNTO Y COMA** 
 
-### ✏️ Integrantes del equipo
+### ✏️ team members
 
 1. **LUCIA GABRIELA NAVARRO MARIN**: 00109525
 
