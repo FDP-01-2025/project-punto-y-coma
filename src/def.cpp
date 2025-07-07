@@ -100,49 +100,52 @@ Aventura infernum = {
      }                  
 };
 
-
-        
-
+ 
 Aventura thornia = {//declaramos el la aventura a la que vamos a añadirle datos
-    "thornia (El mundo olvidado)",//nombre de la aventura como en la estructura pide
-    {
+    "thornia (The Forgotten World)",//nombre de la aventura como en la estructura pide
+}
 //situación 1 (nivel 1)
-        { "Despiertas en unas ruinas cubiertas de niebla y una estatua emite un sonido.", 
+        { "You wake up in some ruins covered in mist, and a statue emits a sound.", 
 //decisión y consecuencia
-          { {"Tocar la estatua", "Te paralisas unos segundos y pierdes tiempo."}, 
+          { {"Touch the statue", "You are paralyzed for a few seconds and lose time."}, 
 //decisión y consecuencia
-            {"Tocar simbolo en forma de triangulo en la pared", "Aparece portal de luz ante ti."}, 
+            {"Touch a triangle-shaped symbol on the wall", "A portal of light appears before you."}, 
 //decisión y consecuencia
-            {"Caminar hacia la niebla", "Escuchas unos murmuros y te alejas."}
+            {"Walk into the mist", "You hear whispers and move away."}
           },
 //premio obtenido y opcion que te da ese premio
-          "Escudo abismal", 1 },
+          "Abyssal Shield", 1 },
 //repetimos la estructura para los niveles siguientes
 //todo esto es un ejemplo
-        { "Sales de la cueva por el portal y encuentras una torre que susurra tus pensamientos sin sesar. ",
-          { {"Te quedas en silencio. ", "No logras soportar la voz de tus pensamientos y pierdes cordura. "},
-            {"Subes a la cima de la torre. ", "No encuentras nada y regresas. "},
-            {"Investigas debajo de la torre acercandote a los susurros. ", "Encuentras entrada subterrania y un cofre. "}
+        { "You exit the cave through the portal and find a tower that endlessly whispers your thoughts. ",
+          { {"You remain silent. ", "You can’t endure the voice of your thoughts and lose sanity. "},
+            {"You climb to the top of the tower. ", "You find nothing and return. "},
+            {"You investigate beneath the tower, approaching the whispers. ", "You find an underground entrance and a chest. "}
           },
-          "Hacha en mal estado", 2 },
-        { "Al descender encuentras una sala con 3 estatuas encapuchadas con diferentes simbolos.",
-          { {"Tocar primer estatua con un simbolo cuadrado. ", "Activas una trampa y no escapaste a tiempo. "},
-            {"Tocar segunda estatua con un simbolo circular. ", "Aparece una neblina y terminas inconciente. "},
-            {"Tocar tercera estatua con simbolo triangular. ", "La estatua se desplaza y abre un camino atras de ella y te llevas su capucha. "}
+          "Axe in poor condition", 2 },
+     { "As you descend, you find a room with 3 hooded statues bearing different symbols.",
+          { {"Touch the first statue with a square symbol.", "You trigger a trap and fail to escape in time."},
+            {"Touch the second statue with a circular symbol.", "A mist appears and you fall unconscious."},
+            {"Touch the third statue with a triangular symbol.", "The statue moves aside, revealing a path behind it, and you take its hood."}
+
           },
-          "Capucha vieja. ", 2 },
-        { "Sigues el camino y te encuentras una sala oscura llena de armas con escombros y simbolos en las paredes. ",
-          { {"Investiga los escombros. ", "Al acercarte a los escombros encuentras un libro y se activan las runas con la capucha apareciendo una puerta . "},
-            {"Vuelves a la sala anterior.. ", "No logras nada. "},
-            {"Investigas las armas. ", "Te tropiezas y te atraviesa una espada de forma humillante. "}
+          "old hood. ", 2 },
+           { "You follow the path and enter a dark room full of weapons, rubble, and symbols on the walls.",
+          { {"Investigate the rubble.", "As you approach the rubble, you find a book. The runes activate with the hood, revealing a door."},
+            {"Return to the previous room.", "You accomplish nothing."},
+            {"Investigate the weapons.", "You trip and get impaled by a sword in a humiliating way."}
           },
-          "Libro desconocido. ", 0 },
-        { "Tras cruzar la puerta, entras en una cámara iluminada por cristales flotantes. En el centro, el Guardián del Olvido despierta de su letargo. Solo una acción puede debilitarlo para tener oportunidad de vencerlo.",
-          { {"Atacar directamente con el hacha.", "El guardián bloquea tu ataque y te lanza contra la pared, dejándote herido."},
-            {"Leer en voz alta la inscripción del libro desconocido.", "La sala tiembla. El guardián parece debilitado y tambalea, pero sigue en pie."},
-            {"Cubrirte con la capucha vieja.", "La capucha se quema al contacto con la energía del guardián y quedas desprotegido."}
-          },
-          "", 1 }// no le pongan atencion al ultimo lo puse por poner falta plantear
+           
+
+          "Unknown Book", 0 },
+             { "After crossing the door, you enter a chamber lit by floating crystals. In the center, the Guardian of Oblivion awakens from its slumber. Only one action can weaken it to give you a chance to defeat it.",
+          { {"Attack directly with the axe.", "The guardian blocks your attack and throws you against the wall, leaving you injured."},
+            {"Read aloud the inscription from the unknown book.", "The chamber trembles. The guardian appears weakened and staggers, but remains standing."},
+            {"Cover yourself with the old hood.", "The hood burns on contact with the guardian's energy, leaving you unprotected."}
+
+       
+          
+          // no le pongan atencion al ultimo lo puse por poner falta plantear
 }
 };
 
