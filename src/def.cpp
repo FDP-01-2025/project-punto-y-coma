@@ -64,78 +64,90 @@ Aventura nerysia = {
 };
 
 
-//aventura dos
+//aventur two
 Aventura infernum = {
-
-           "Infernum (Fire World)",
+    "Infernum (Fire World)",
     {
         {"Level 1 - Ashen Plains: The ground trembles beneath your feet. Fiery lizards have started attacking caravans of volcanic rock traders. What do you do to save the merchants?",
-             {
-                {"You try to talk to the lizards", "The lizards don’t understand and become even more agitated."},
+             {{"You try to talk to the lizards", "The lizards don’t understand and become even more agitated."},
               {"You throw frozen water at them", "The lizards become enraged and start attacking everyone."},
               {"You distract them with a bright torch", "The lizards are confused by the light and freeze, saving the merchants."}},
-             "Lava Sword", 2},
+        "Lava Sword", 2},
 
-                
+        {"Level 2 - Canyon of Burning Thunder: You find a crack emitting poisonous steam that is affecting the lava birds. Some surround you in confusion. What do you do to help the birds?",
+             {{"Block the crack with rocks", "The pressure causes an explosion and everyone dies." },
+             {"Guide the birds out of the smoke", "You save the birds and they thank you with a bread to regain energy."},
+             {"Confront them, thinking they're hostile", "The birds attack you."}},
+        "Enchanted Fire Heart", 1},
 
+        {"Level 3 - Sleeping Volcano: You climb a volcano to investigate its energy. You discover a crack leading to a secret cavern, but it is guarded by magma golems. How do you access the secret cavern?",
+             {{"Mimic the golems’ movements", "They mistake you for one of them and let you pass."},
+             {"Camouflage yourself with volcanic mud", "The mud burns you and you die."},
+             {"Wait until they fall asleep to sneak past", "You fall asleep and the golems catch you."}},
+        "Magma Scepter", 0}, 
 
+        {"Level 4 - River of Eternal Lava: To reach the next area, you must cross a lava river over platforms that melt over time. How do you cross the river?",
+             {{"Use a fireproof beetle shell", "You protect yourself from the lava and cross without issues."},
+             {"Jump as quickly as posible", "You get burned because you don’t jump fast enough."},
+             {"Use an ancient ice shard to freeze parts of the lava", "The ice melts too quickly and you fall into the river."}},
+       "Volcanic Rock Shield", 0},
 
-        {"Nivel 4 - Río de Lava Eterna: Para cruzar al siguiente territorio, debes atravesar un río de lava sobre plataformas que se derriten con el tiempo. ¿Como logras cruzar el rio?",
-             {{"Un caparazón de escarabajo ignífugo", "Te proteges de la lava y cruzas sin problemas"},
-             {"Saltar lo más rapido posible", "Te quemas porque no alcanzas a saltar."},
-             {"Usar un fragmento de hielo antiguo para congelar partes de la lava", "El hielo se derrite muy rapido y caes al rio"}},
-       "Escudo de roca volcanica", 0},
-
-       {"Nivel 5 - Núcleo del Coloso Ardiente: En lo más profundo del mundo, te enfrentas al Coloso Ardiente, una criatura que parece hecha del núcleo del planeta. Está enloquecido. ¿Como derrotas al coloso?",
-             {{"Usas un mineral especial que absorbe calor", "El mineral es muy debil y se derite."},
-              {"Le haces recordar quién era antes con un artefacto antiguo", "El coloso se conmueve y se duerme en paz."},
-              {"Intentas luchar contra el coloso", "El coloso es demasiado fuerte y te aplasta"}},
-        "Amuleto del coloso", 1},
+       {"Level 5 - Core of the Burning Colossus: Deep in the world, you face the Burning Colossus, a creature that seems made from the planet’s core. It is enraged. How do you defeat the colossus?",
+             {{"Use a special mineral that absorbs heat", "The mineral is too weak and melts."},
+              {"Help it remember who it once was with an ancient artifact", "The colossus is moved and falls asleep peacefully."},
+              {"Try to fight the colossus", "The colossus is too strong and crushes you."}},
+        "Colossus Amulet", 1},
      }                  
 };
 
-Aventura thornia = {//declaramos el la aventura a la que vamos a añadirle datos
-    "thornia (El mundo olvidado)",//nombre de la aventura como en la estructura pide
-    {
-//situación 1 (nivel 1)
-        { "Despiertas en unas ruinas cubiertas de niebla y una estatua emite un sonido.", 
-//decisión y consecuencia
-          { {"Tocar la estatua", "Te paralisas unos segundos y pierdes tiempo."}, 
-//decisión y consecuencia
-            {"Tocar simbolo en forma de triangulo en la pared", "Aparece portal de luz ante ti."}, 
-//decisión y consecuencia
-            {"Caminar hacia la niebla", "Escuchas unos murmuros y te alejas."}
+ 
+Aventura thornia = { // we declare the adventure to which we will add data
+    "Thornia (The Forgotten World)", // name of the adventure as required by the structure
+    {   
+        // situation 1 (level 1) 
+        { "You wake up in some ruins covered in mist, and a statue emits a sound.",
+          // decision and consequence
+          { {"Touch the statue", "You are paralyzed for a few seconds and lose time."},
+            {"Touch a triangle-shaped symbol on the wall", "A portal of light appears before you."},
+            {"Walk into the mist", "You hear whispers and move away."}
           },
-//premio obtenido y opcion que te da ese premio
-          "Escudo abismal", 1 },
-//repetimos la estructura para los niveles siguientes
-//todo esto es un ejemplo
-        { "Sales de la cueva por el portal y encuentras una torre que susurra tus pensamientos sin sesar. ",
-          { {"Te quedas en silencio. ", "No logras soportar la voz de tus pensamientos y pierdes cordura. "},
-            {"Subes a la cima de la torre. ", "No encuentras nada y regresas. "},
-            {"Investigas debajo de la torre acercandote a los susurros. ", "Encuentras entrada subterrania y un cofre. "}
+          // reward obtained and option that grants it
+          "Abyssal Shield", 1 },
+
+        // situation 2 (level 2)
+        { "You exit the cave through the portal and find a tower that endlessly whispers your thoughts.",
+          { {"You remain silent.", "You can’t endure the voice of your thoughts and lose sanity."},
+            {"You climb to the top of the tower.", "You find nothing and return."},
+            {"You investigate beneath the tower, approaching the whispers.", "You find an underground entrance and a chest."}
           },
-          "Hacha en mal estado", 2 },
-        { "Al descender encuentras una sala con 3 estatuas encapuchadas con diferentes simbolos.",
-          { {"Tocar primer estatua con un simbolo cuadrado. ", "Activas una trampa y no escapaste a tiempo. "},
-            {"Tocar segunda estatua con un simbolo circular. ", "Aparece una neblina y terminas inconciente. "},
-            {"Tocar tercera estatua con simbolo triangular. ", "La estatua se desplaza y abre un camino atras de ella y te llevas su capucha. "}
+          "Worn Axe", 2 },
+
+        // situation 3 (level 3)
+        { "As you descend, you find a room with 3 hooded statues bearing different symbols.",
+          { {"Touch the first statue with a square symbol.", "You trigger a trap and fail to escape in time."},
+            {"Touch the second statue with a circular symbol.", "A mist appears and you fall unconscious."},
+            {"Touch the third statue with a triangular symbol.", "The statue moves aside, revealing a path behind it, and you take its hood."}
           },
-          "Capucha vieja. ", 2 },
-        { "Sigues el camino y te encuentras una sala oscura llena de armas con escombros y simbolos en las paredes. ",
-          { {"Investiga los escombros. ", "Al acercarte a los escombros encuentras un libro y se activan las runas con la capucha apareciendo una puerta . "},
-            {"Vuelves a la sala anterior.. ", "No logras nada. "},
-            {"Investigas las armas. ", "Te tropiezas y te atraviesa una espada de forma humillante. "}
+          "Old Hood", 2 },
+
+        // situation 4 (level 4)
+        { "You follow the path and enter a dark room full of weapons, rubble, and symbols on the walls.",
+          { {"Investigate the rubble.", "As you approach the rubble, you find a book. The runes activate with the hood, revealing a door."},
+            {"Return to the previous room.", "You accomplish nothing."},
+            {"Investigate the weapons.", "You trip and get impaled by a sword in a humiliating way."}
           },
-          "Libro desconocido. ", 0 },
-        { "Tras cruzar la puerta, entras en una cámara iluminada por cristales flotantes. En el centro, el Guardián del Olvido despierta de su letargo. Solo una acción puede debilitarlo para tener oportunidad de vencerlo.",
-          { {"Atacar directamente con el hacha.", "El guardián bloquea tu ataque y te lanza contra la pared, dejándote herido."},
-            {"Leer en voz alta la inscripción del libro desconocido.", "La sala tiembla. El guardián parece debilitado y tambalea, pero sigue en pie."},
-            {"Cubrirte con la capucha vieja.", "La capucha se quema al contacto con la energía del guardián y quedas desprotegido."}
+          "Unknown Book", 0 },
+
+        // situation 5 (level 5)
+        { "After crossing the door, you enter a chamber lit by floating crystals. In the center, the Guardian of Oblivion awakens from its slumber. Only one action can weaken it to give you a chance to defeat it.",
+          { {"Attack directly with the axe.", "The guardian blocks your attack and throws you against the wall, leaving you injured."},
+            {"Read aloud the inscription from the unknown book.", "The chamber trembles. The guardian appears weakened and staggers, but remains standing."},
+            {"Cover yourself with the old hood.", "The hood burns on contact with the guardian's energy, leaving you unprotected."}
           },
-          "", 1 }// no le pongan atencion al ultimo lo puse por poner falta plantear
-}
+          "Memory Crystal", 1 }
+    }
 };
+
 
 
 // Funciones
