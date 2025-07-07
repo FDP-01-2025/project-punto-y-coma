@@ -62,7 +62,7 @@ struct Nivel: Contains the situation, decisions, reward, and the winning option.
 
 struct Aventura: Contains the name of the adventure and its levels.
 
-✔️ Arrays
+Arrays
 Array of decisions per level: Decision decisions[3]
 
 Array of levels per adventure: Nivel niveles[5]
@@ -103,15 +103,15 @@ Main file (main.cpp): controls the game.
 
 Language: C++
 
-- Librerías: `<iostream>`, `<fstream>`
+- Libraries: <iostream>, <fstream>
 
-- No requiere librerías externas adicionales.
+No additional external libraries are required.
 
-**💻 Cómo compilar**
+💻 How to Compile
 
-1. Debes tener un compilador C++, por ejemplo g++.
+You must have a C++ compiler installed, such as g++.
 
-2. Clona este repositorio en tu máquina local, en el escritorio:
+Clone this repository to your local machine, on the desktop:
    ```bash
    git clone https://github.com/FDP-01-2025/project-punto-y-coma.git
 
