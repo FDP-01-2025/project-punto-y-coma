@@ -59,11 +59,14 @@ MinigameConfig getConfigNerysia();
 MinigameConfig getConfigInfernum();
 MinigameConfig getConfigThornia();
 
-// Declaración de minijuegos
-void minijuegoMemoria();
-void minijuegoTesoro();
-void minijuegoSimon();
-void minijuegoContar();
+// Minigame declarations
+void minigameFishing();
+void minigameLostObjects();
+void minigameBrazas();
+void minigameMagma();
+string minigameDuel();
+void minigameopenChest();
+void minigamechooseDoor();
 
 // Adventure declarations
 extern Adventure nerysia;
