@@ -65,7 +65,7 @@ Aventura nerysia = {
 
 
 //aventur two
-Adventure infernum = {
+Aventura infernum = {
     "Infernum (Fire World)",
     {
         {"Level 1 - Ashen Plains: The ground trembles beneath your feet. Fiery lizards have started attacking caravans of volcanic rock traders. What do you do to save the merchants?",
@@ -88,8 +88,7 @@ Adventure infernum = {
 
         {"Level 4 - River of Eternal Lava: To reach the next area, you must cross a lava river over platforms that melt over time. How do you cross the river?",
              {{"Use a fireproof beetle shell", "You protect yourself from the lava and cross without issues."},
-             {"Jump as quickly as po
-            sible", "You get burned because you don’t jump fast enough."},
+             {"Jump as quickly as posible", "You get burned because you don’t jump fast enough."},
              {"Use an ancient ice shard to freeze parts of the lava", "The ice melts too quickly and you fall into the river."}},
        "Volcanic Rock Shield", 0},
 
