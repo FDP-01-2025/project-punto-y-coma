@@ -3,41 +3,57 @@
 using namespace std;
 
 int main() {
-   
-
-    int opcion;
-    introduccionJuego();
+    string input;
+    int option;
+    gameIntroduction();
 
     do {
-        cout << "\n=== Selecciona una aventura ===\n";
-        cout << "1. Nerysia (Mundo de Agua)\n";
-        cout << "2. Infernum (Mundo de Fuego)\n";
-        cout << "3. Thornia (Mundo Apocaliptico)\n";
-        cout << "4. Mostrar progreso\n";
-        cout << "0. Salir\n";
-        cout << "Opcion: ";
-        cin >> opcion;
+        cout << "\n=== Select an adventure ===\n";
+        cout << "1. Nerysia (Water World)\n";
+        cout << "2. Infernum (Fire World)\n";
+        cout << "3. Thornia (Forgotten World)\n";
+        cout << "4. Show progress\n";
+        cout << "0. Exit\n";
+        cout << "Option: ";
+        cin >> input;
 
-        switch (opcion) {
+        // Validate that it is a valid integer number
+
+        bool isNumber = true;
+        for (char c : input) {
+            if (c < '0' || c > '9') {
+                isNumber = false;
+                break;
+            }
+        }
+
+        if (!isNumber) {
+            cout << "Invalid input. You must enter only numbers.\n";
+            continue;
+        }
+
+        option = stoi(input);
+
+        switch (option) {
             case 1:
-                intentarJugarAventura(nerysia, 0, obtenerConfigNerysia());
+                tryPlayAdventure(nerysia, 0, getConfigNerysia());
                 break;
             case 2:
-                intentarJugarAventura(infernum, 1, obtenerConfigInfernum());
+                tryPlayAdventure(infernum, 1, getConfigInfernum());
                 break;
             case 3:
-                intentarJugarAventura(thornia, 2, obtenerConfigThornia());
+                tryPlayAdventure(thornia, 2, getConfigThornia());
                 break;
             case 4:
-                mostrarPremios();
+                readProgress();
                 break;
             case 0:
-                cout << "Hasta pronto, " << nombreJugador << "!!!!!\n";
+                cout << "See you soon, " << playerName << "!!!!!\n";
                 break;
             default:
-                cout << "Opcion invalida.\n";
+                cout << "Invalid option. Choose between 0 and 4.\n";
         }
-    } while (opcion != 0);
+    } while (option != 0);
 
     return 0;
 }
