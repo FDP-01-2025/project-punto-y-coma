@@ -101,53 +101,53 @@ Aventura infernum = {
 };
 
  
-Aventura thornia = {//declaramos el la aventura a la que vamos a añadirle datos
-    "thornia (The Forgotten World)",//nombre de la aventura como en la estructura pide
-}
-//situación 1 (nivel 1)
-        { "You wake up in some ruins covered in mist, and a statue emits a sound.", 
-//decisión y consecuencia
-          { {"Touch the statue", "You are paralyzed for a few seconds and lose time."}, 
-//decisión y consecuencia
-            {"Touch a triangle-shaped symbol on the wall", "A portal of light appears before you."}, 
-//decisión y consecuencia
+Aventura thornia = { // we declare the adventure to which we will add data
+    "Thornia (The Forgotten World)", // name of the adventure as required by the structure
+    {   
+        // situation 1 (level 1) 
+        { "You wake up in some ruins covered in mist, and a statue emits a sound.",
+          // decision and consequence
+          { {"Touch the statue", "You are paralyzed for a few seconds and lose time."},
+            {"Touch a triangle-shaped symbol on the wall", "A portal of light appears before you."},
             {"Walk into the mist", "You hear whispers and move away."}
           },
-//premio obtenido y opcion que te da ese premio
+          // reward obtained and option that grants it
           "Abyssal Shield", 1 },
-//repetimos la estructura para los niveles siguientes
-//todo esto es un ejemplo
-        { "You exit the cave through the portal and find a tower that endlessly whispers your thoughts. ",
-          { {"You remain silent. ", "You can’t endure the voice of your thoughts and lose sanity. "},
-            {"You climb to the top of the tower. ", "You find nothing and return. "},
-            {"You investigate beneath the tower, approaching the whispers. ", "You find an underground entrance and a chest. "}
+
+        // situation 2 (level 2)
+        { "You exit the cave through the portal and find a tower that endlessly whispers your thoughts.",
+          { {"You remain silent.", "You can’t endure the voice of your thoughts and lose sanity."},
+            {"You climb to the top of the tower.", "You find nothing and return."},
+            {"You investigate beneath the tower, approaching the whispers.", "You find an underground entrance and a chest."}
           },
-          "Axe in poor condition", 2 },
-     { "As you descend, you find a room with 3 hooded statues bearing different symbols.",
+          "Worn Axe", 2 },
+
+        // situation 3 (level 3)
+        { "As you descend, you find a room with 3 hooded statues bearing different symbols.",
           { {"Touch the first statue with a square symbol.", "You trigger a trap and fail to escape in time."},
             {"Touch the second statue with a circular symbol.", "A mist appears and you fall unconscious."},
             {"Touch the third statue with a triangular symbol.", "The statue moves aside, revealing a path behind it, and you take its hood."}
-
           },
-          "old hood. ", 2 },
-           { "You follow the path and enter a dark room full of weapons, rubble, and symbols on the walls.",
+          "Old Hood", 2 },
+
+        // situation 4 (level 4)
+        { "You follow the path and enter a dark room full of weapons, rubble, and symbols on the walls.",
           { {"Investigate the rubble.", "As you approach the rubble, you find a book. The runes activate with the hood, revealing a door."},
             {"Return to the previous room.", "You accomplish nothing."},
             {"Investigate the weapons.", "You trip and get impaled by a sword in a humiliating way."}
           },
-           
-
           "Unknown Book", 0 },
-             { "After crossing the door, you enter a chamber lit by floating crystals. In the center, the Guardian of Oblivion awakens from its slumber. Only one action can weaken it to give you a chance to defeat it.",
+
+        // situation 5 (level 5)
+        { "After crossing the door, you enter a chamber lit by floating crystals. In the center, the Guardian of Oblivion awakens from its slumber. Only one action can weaken it to give you a chance to defeat it.",
           { {"Attack directly with the axe.", "The guardian blocks your attack and throws you against the wall, leaving you injured."},
             {"Read aloud the inscription from the unknown book.", "The chamber trembles. The guardian appears weakened and staggers, but remains standing."},
             {"Cover yourself with the old hood.", "The hood burns on contact with the guardian's energy, leaving you unprotected."}
-
-       
-          
-          // no le pongan atencion al ultimo lo puse por poner falta plantear
-}
+          },
+          "Memory Crystal", 1 }
+    }
 };
+
 
 
 // Funciones
