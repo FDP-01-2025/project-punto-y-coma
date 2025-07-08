@@ -3,7 +3,6 @@
 #include <fstream>
 #include <conio.h>
 
-
 // Global variables
 bool adventuresPlayed[3] = {false, false, false};
 string playerRewards[20];
@@ -222,7 +221,6 @@ void showRewards() {
     }
     cout << endl;
 }
-
 //save progress
 void saveProgress(){
     ofstream file("src/progress.txt");
@@ -254,9 +252,7 @@ void saveProgress(){
     } else {
         cout << "Could not open file to save.\n";
     }
-}
-
-//show progress
+}//show progress
 void readProgress() {
     ifstream file("src/progress.txt");
     if (file.is_open()) {
@@ -397,7 +393,6 @@ void minigameLostObjects() {
 
     cout << "Minigame finished.\n";
 }
-
 //game 3  magma
 void minigameMagma() {
     string options[3] = {"Rock", "Paper", "Magma"};
@@ -521,7 +516,7 @@ void minigameopenChest() {
     cout << "Good luck, brave player.\n";
 
     while (!opened) {
-        // Safe input
+        // Entrada segura
         for (int i = 0; i < 3; i++) {
             string input;
             bool valid = false;
@@ -529,7 +524,7 @@ void minigameopenChest() {
                 cout << "Enter digit #" << (i + 1) << " (0-9): ";
                 cin >> input;
 
-                // Validate that the input is a single character and that it is a digit.
+                // Validar que el input sea un solo carácter y que sea dígito
                 if (input.length() == 1 && isdigit(input[0])) {
                     attempt[i] = input[0] - '0';
                     valid = true;
@@ -539,7 +534,7 @@ void minigameopenChest() {
             }
         }
 
-        // Attempt evaluation
+        // Evaluación del intento
         int correct = 0;
         int misplaced = 0;
         bool codeUsed[3] = {false, false, false};
@@ -579,8 +574,6 @@ void minigameopenChest() {
         cout << "----------------------------------------\n";
     }
 }
-
-
 //game choose door
 void minigamechooseDoor() {
     string input;
@@ -597,9 +590,9 @@ void minigamechooseDoor() {
         cout << "Choose a door (1, 2, or 3): ";
         cin >> input;
 
-        // Validate that it is only a number between '1' and '3'"
+        // Validar que solo sea un número entre "1" y "3"
         if (input == "1" || input == "2" || input == "3") {
-            choice = stoi(input); // We convert it to an integer
+            choice = stoi(input); // Convertimos a entero
 
             if (choice == correctDoor) {
                 cout << "\nCorrect! The door creaks open slowly...\n";
@@ -673,8 +666,6 @@ string minigameDuel() {
         }
     }
 }
-
-
 // Configurations for minigames for each adventure
 MinigameConfig getConfigNerysia() {
     return MinigameConfig{
@@ -683,14 +674,12 @@ MinigameConfig getConfigNerysia() {
     };
 }
 
-
 MinigameConfig getConfigInfernum() {
     return MinigameConfig{
         {false, false, true, false, true},
         {0, 0, 3, 0, 4}  // 3 = brazas, 5 = magma
     };
 }
-
 
 MinigameConfig getConfigThornia() {
     return MinigameConfig{
@@ -764,7 +753,7 @@ void playAdventure(const Adventure& adventure, const MinigameConfig& config) {
     cout << "\nYou have completed the adventure!\n";
 }
 
-// Try plays adventures
+
 void tryPlayAdventure(const Adventure& adventure, int adventureIndex, const MinigameConfig& config) {
     if (adventureIndex < 0 || adventureIndex >= 3) {
         cout << "Invalid adventure index.\n";
@@ -778,7 +767,6 @@ void tryPlayAdventure(const Adventure& adventure, int adventureIndex, const Mini
          saveProgress();
     }
 }
-// Try play game extra
 void tryPlayUmbra() {
     if (rewardCount < 15) {
         cout << "\nYou must collect all rewards from Nerysia, Infernum, and Thornia to unlock this secret world.\n";
@@ -806,4 +794,3 @@ void gameIntroduction() {
         else cout << "Name cannot contain numbers. Try again: ";
     } while (true);
 }
-
