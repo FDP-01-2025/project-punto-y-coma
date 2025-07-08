@@ -590,9 +590,9 @@ void minigamechooseDoor() {
         cout << "Choose a door (1, 2, or 3): ";
         cin >> input;
 
-        // Validar que solo sea un número entre "1" y "3"
+        // Validate that it is only a number between '1' and '3'"
         if (input == "1" || input == "2" || input == "3") {
-            choice = stoi(input); // Convertimos a entero
+            choice = stoi(input); // We convert it to an integer
 
             if (choice == correctDoor) {
                 cout << "\nCorrect! The door creaks open slowly...\n";
@@ -753,7 +753,7 @@ void playAdventure(const Adventure& adventure, const MinigameConfig& config) {
     cout << "\nYou have completed the adventure!\n";
 }
 
-
+// Try plays adventures
 void tryPlayAdventure(const Adventure& adventure, int adventureIndex, const MinigameConfig& config) {
     if (adventureIndex < 0 || adventureIndex >= 3) {
         cout << "Invalid adventure index.\n";
@@ -767,6 +767,7 @@ void tryPlayAdventure(const Adventure& adventure, int adventureIndex, const Mini
          saveProgress();
     }
 }
+// Try play game extra
 void tryPlayUmbra() {
     if (rewardCount < 15) {
         cout << "\nYou must collect all rewards from Nerysia, Infernum, and Thornia to unlock this secret world.\n";
