@@ -1,5 +1,5 @@
-#include "src/def.cpp"
 #include <iostream>
+#include "src/def.cpp"
 using namespace std;
 
 int main() {

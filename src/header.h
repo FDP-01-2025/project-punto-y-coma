@@ -54,6 +54,10 @@ void gameIntroduction();
 void saveProgress();
 //read progress and call it
 void readProgress();
+//show final board
+void showFinalBoard();
+//show rewards only umbra
+void showUmbraRewards();
 //functions to configure the minigames
 MinigameConfig getConfigNerysia();
 MinigameConfig getConfigInfernum();

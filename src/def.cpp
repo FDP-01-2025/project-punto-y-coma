@@ -5,6 +5,7 @@
 
 // Global variables
 bool adventuresPlayed[3] = {false, false, false};
+bool umbraPlayed = false;
 string playerRewards[20];
 int rewardCount = 0;
 string playerName;
@@ -223,7 +224,8 @@ void showRewards() {
 }
 //save progress
 void saveProgress(){
-    ofstream file("src/progress.txt");
+   string filename = "src/progress_" + playerName + ".txt";
+    ofstream file(filename);
     if (file.is_open()) {
         file << playerName << endl;
         
@@ -234,19 +236,23 @@ void saveProgress(){
                 totalAdventures++;
             }
         }
+        if (umbraPlayed) totalAdventures++;
         file << totalAdventures << endl;
 
         // Save adventure names
         if (adventuresPlayed[0]) file << "Nerysia (Water World)" << endl;
         if (adventuresPlayed[1]) file << "Infernum (Fire World)" << endl;
         if (adventuresPlayed[2]) file << "thornia (The Forgotten World)" << endl;
+     if (umbraPlayed) file << "Umbra (Shadow Realm)" << endl;
+
 
         // Save rewards
         file << rewardCount << endl;
         for (int i = 0; i < rewardCount; i++) {
             file << playerRewards[i] << endl;
         }
-
+        // Save Umbra flag
+        file << (umbraPlayed ? 1 : 0) << endl;
         file.close();
         cout << "\nProgress saved successfully.\n";
     } else {
@@ -254,7 +260,8 @@ void saveProgress(){
     }
 }//show progress
 void readProgress() {
-    ifstream file("src/progress.txt");
+   string filename = "src/progress_" + playerName + ".txt";
+    ifstream file(filename);
     if (file.is_open()) {
         string line;
         getline(file, playerName);
@@ -268,7 +275,11 @@ void readProgress() {
         for (int i = 0; i < adventures; i++) {
             getline(file, line);
             cout << i + 1 << ". " << line << endl;
-        }
+           if (line == "Nerysia (Water World)") adventuresPlayed[0] = true;
+            else if (line == "Infernum (Fire World)") adventuresPlayed[1] = true;
+            else if (line == "thornia (The Forgotten World)") adventuresPlayed[2] = true;
+            else if (line == "Umbra (Shadow Realm)") umbraPlayed = true;
+           }
 
         getline(file, line);
         rewardCount = stoi(line);
@@ -282,7 +293,9 @@ void readProgress() {
                 cout << i + 1 << ". " << playerRewards[i] << endl;
             }
         }
-
+  // Leer Umbra flag
+        getline(file, line);
+        umbraPlayed = (line == "1");
         file.close();
     } else {
         cout << "Could not open the file to read progress.\n";
@@ -767,16 +780,77 @@ void tryPlayAdventure(const Adventure& adventure, int adventureIndex, const Mini
          saveProgress();
     }
 }
+void showUmbraRewards() {
+    cout << "\n--- Umbra Final Rewards ---\n";
+
+    // Los últimos 5 premios (índices 15 a 19)
+    int start = rewardCount - 5;
+    if (start < 0) start = 0; // Por si acaso
+
+    for (int i = start; i < rewardCount; i++) {
+        cout << i - start + 1 << ". " << playerRewards[i] << "\n";
+    }
+    cout << endl;
+}
+
 void tryPlayUmbra() {
     if (rewardCount < 15) {
         cout << "\nYou must collect all rewards from Nerysia, Infernum, and Thornia to unlock this secret world.\n";
         return;
     }
+     if (umbraPlayed) {
+        cout << "\nYou have already played Umbra before. You cannot play it again.\n";
+        return;
+    }
 
     cout << "\n--- UMBRA: FINAL ADVENTURE UNLOCKED ---\n";
     playAdventure(umbra, { {false, false, false, false, false}, {0, 0, 0, 0, 0} }); // No minigames, only logic with rewards
+    
+    umbraPlayed = true;
+    saveProgress();
+
+     cout << "\nYou have finished Umbra. These are all your final rewards:\n";
+    showUmbraRewards();
+
+    //show board
+    showFinalBoard();
 }
 
+void showFinalBoard() {
+    const int rows = 7;
+    const int cols = 40;
+    char board[rows][cols + 1]; // +1 para el '\0' al final de cada fila
+
+    // Rellenar toda la matriz con '*'
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            if (i == 0 || i == rows - 1 || j == 0 || j == cols - 1)
+                board[i][j] = '*';
+            else
+                board[i][j] = ' ';
+        }
+        board[i][cols] = '\0'; // Fin de línea
+    }
+
+    // Mensaje a imprimir en el centro
+    string message = "  YOU HAVE FINISHED THE GAME!  ";
+
+    // Calcular inicio para centrar el mensaje
+    int startCol = (cols - 2 - message.length()) / 2 + 1; // -2 por bordes
+
+    // Poner el mensaje en la fila central
+    int middleRow = rows / 2;
+    for (size_t i = 0; i < message.length(); i++) {
+        board[middleRow][startCol + i] = message[i];
+    }
+
+    // Imprimir tablero
+    cout << "\n";
+    for (int i = 0; i < rows; i++) {
+        cout << board[i] << endl;
+    }
+    cout << "\n";
+}
 
 // Introduction function
 void gameIntroduction() {
