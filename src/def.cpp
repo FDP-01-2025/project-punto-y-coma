@@ -702,7 +702,7 @@ bool playLevel(const Level& level, const MinigameConfig& config, int levelIndex)
     cout << "Choose an option (1, 2, or 3): ";
     cin >> input;
 
-    if(input == "1" && input == "2" && input == "3") {
+    if(input == "1" || input == "2" || input == "3") {
         option = stoi(input); // convertir a entero
         break;
     } else {
