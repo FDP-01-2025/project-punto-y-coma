@@ -5,13 +5,15 @@
 using namespace std;
 
 // Structure for decisions
-struct Decision {
+struct Decision
+{
     string text;
     string consequence;
 };
 
 // Structure for a level
-struct Level {
+struct Level
+{
     string situation;
     Decision decisions[3];
     string reward;
@@ -19,15 +21,17 @@ struct Level {
 };
 
 // Structure for adventure
-struct Adventure {
+struct Adventure
+{
     string name;
     Level levels[5];
 };
 
 // Configuration for minigames: enable and type per level (5 levels)
-struct MinigameConfig {
-    bool activate[5];  // true if there is a minigame at that level
-    int type[7];       // minigame 1: fishing 2:lostobject 3:hazel 4:hazel 5:duel 6:door 7: chest
+struct MinigameConfig
+{
+    bool activate[5]; // true if there is a minigame at that level
+    int type[7];      // minigame 1: fishing 2:lostobject 3:hazel 4:hazel 5:duel 6:door 7: chest
 };
 
 // Global variables
@@ -38,27 +42,27 @@ extern int rewardCount;
 extern string playerName;
 
 // Function declarations
-//function to add reward
+// function to add reward
 void addReward(string reward);
-//function to show rewards
+// function to show rewards
 void showRewards();
-//function to play level
-bool playLevel(const Level& level, const MinigameConfig& config, int levelIndex);
-//function to play adventure
-void playAdventure(const Adventure& adventure, const MinigameConfig& config);
-//function to try playing adventure, to validate how many times an adventure has been played
-void tryPlayAdventure(const Adventure& adventure, int adventureIndex, const MinigameConfig& config);
-//function for game introduction
+// function to play level
+bool playLevel(const Level &level, const MinigameConfig &config, int levelIndex);
+// function to play adventure
+void playAdventure(const Adventure &adventure, const MinigameConfig &config);
+// function to try playing adventure, to validate how many times an adventure has been played
+void tryPlayAdventure(const Adventure &adventure, int adventureIndex, const MinigameConfig &config);
+// function for game introduction
 void gameIntroduction();
-//function to save progress using files
+// function to save progress using files
 void saveProgress();
-//read progress and call it
+// read progress and call it
 void readProgress();
-//show final board
+// show final board
 void showFinalBoard();
-//show rewards only umbra
+// show rewards only umbra
 void showUmbraRewards();
-//functions to configure the minigames
+// functions to configure the minigames
 MinigameConfig getConfigNerysia();
 MinigameConfig getConfigInfernum();
 MinigameConfig getConfigThornia();
