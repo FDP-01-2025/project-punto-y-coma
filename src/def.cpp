@@ -89,7 +89,7 @@ Adventure infernum = {
 
         {"Level 4 - Eternal Lava River: To cross to the next territory, you must cross a lava river on platforms that melt over time. How do you cross the river?",
              {{"A shell from a fireproof beetle", "You protect yourself from the lava and cross safely."},
-             {"Jump as fast as possible", "You get burned because you don’t jump fast enough."},
+             {"Jump as fast as possible", "You get burned because you dont jump fast enough."},
              {"Use an ancient ice fragment to freeze parts of the lava", "The ice melts too fast and you fall into the river."}},
        "Volcanic Rock Shield", 0},
 
