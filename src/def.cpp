@@ -70,7 +70,7 @@ Adventure infernum = {
     "Infernum (Fire World)",
     {
         {"Level 1 - Ash Plains: The ground shakes under your feet, fiery lizards have started attacking caravans carrying volcanic rock. What do you do to save the merchants?",
-             {{"You try to talk to the lizards", "The lizards don’t understand and get even more agitated."},
+             {{"You try to talk to the lizards", "The lizards dont understand and get even more agitated."},
               {"You throw frozen water at them", "The lizards get angry and start attacking everyone."},
               {"You distract them with a bright torch", "The lizards get confused by the light and stay still, saving the merchants."}},
         "Lava Sword", 2},
