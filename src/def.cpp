@@ -1,4 +1,7 @@
 #include "header.h"
+#include <iostream>
+#include <fstream>
+#include <conio.h>
 
 
 // Global variables
