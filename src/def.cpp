@@ -221,6 +221,7 @@ void showRewards() {
     }
     cout << endl;
 }
+
 //save progress
 void saveProgress(){
     ofstream file("src/progress.txt");
@@ -252,7 +253,9 @@ void saveProgress(){
     } else {
         cout << "Could not open file to save.\n";
     }
-}//show progress
+}
+
+//show progress
 void readProgress() {
     ifstream file("src/progress.txt");
     if (file.is_open()) {
@@ -393,6 +396,7 @@ void minigameLostObjects() {
 
     cout << "Minigame finished.\n";
 }
+
 //game 3  magma
 void minigameMagma() {
     string options[3] = {"Rock", "Paper", "Magma"};
@@ -574,6 +578,8 @@ void minigameopenChest() {
         cout << "----------------------------------------\n";
     }
 }
+
+
 //game choose door
 void minigamechooseDoor() {
     string input;
@@ -666,6 +672,8 @@ string minigameDuel() {
         }
     }
 }
+
+
 // Configurations for minigames for each adventure
 MinigameConfig getConfigNerysia() {
     return MinigameConfig{
@@ -674,12 +682,14 @@ MinigameConfig getConfigNerysia() {
     };
 }
 
+
 MinigameConfig getConfigInfernum() {
     return MinigameConfig{
         {false, false, true, false, true},
         {0, 0, 3, 0, 4}  // 3 = brazas, 5 = magma
     };
 }
+
 
 MinigameConfig getConfigThornia() {
     return MinigameConfig{
