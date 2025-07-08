@@ -516,7 +516,7 @@ void minigameopenChest() {
     cout << "Good luck, brave player.\n";
 
     while (!opened) {
-        // Entrada segura
+        // Safe input
         for (int i = 0; i < 3; i++) {
             string input;
             bool valid = false;
@@ -524,7 +524,7 @@ void minigameopenChest() {
                 cout << "Enter digit #" << (i + 1) << " (0-9): ";
                 cin >> input;
 
-                // Validar que el input sea un solo carácter y que sea dígito
+                // Validate that the input is a single character and that it is a digit.
                 if (input.length() == 1 && isdigit(input[0])) {
                     attempt[i] = input[0] - '0';
                     valid = true;
@@ -534,7 +534,7 @@ void minigameopenChest() {
             }
         }
 
-        // Evaluación del intento
+        // Attempt evaluation
         int correct = 0;
         int misplaced = 0;
         bool codeUsed[3] = {false, false, false};
