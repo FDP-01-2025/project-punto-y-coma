@@ -697,26 +697,19 @@ bool playLevel(const Level& level, const MinigameConfig& config, int levelIndex)
     
     string input;
     int option;
-    do {
-        cout << "Choose an option: ";
-        cin >> input;
-        bool isNumber = true;
-        for (char c : input) {
-            if (c < '0' || c > '9') {
-                isNumber = false;
-                break;
-            }
-        }
-        if (!isNumber) {
-            cout << "Invalid input. You must enter only numbers.\n";
-            continue;
-        }
-        option = stoi(input);
 
-        if (option < 1 || option > 3) {
-            cout << "Invalid option. Try again with 1, 2, or 3.\n";
-        }
-    } while (option < 1 || option > 3);
+    while (true) {
+    cout << "Choose an option (1, 2, or 3): ";
+    cin >> input;
+
+    if(input == "1" && input == "2" && input == "3") {
+        option = stoi(input); // convertir a entero
+        break;
+    } else {
+        cout << "Invalid input. You must type 1, 2, or 3.\n";
+    }
+    }
+
 
     cout << "\n" << level.decisions[option - 1].consequence << "\n";
 
