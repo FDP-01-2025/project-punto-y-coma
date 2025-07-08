@@ -1,6 +1,8 @@
 #ifndef HEADER_H
 #define HEADER_H
-
+#include <iostream>
+#include <fstream>
+#include <conio.h>
 #include <iostream>
 using namespace std;
 

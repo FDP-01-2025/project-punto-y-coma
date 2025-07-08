@@ -1,7 +1,5 @@
 #include "header.h"
-#include <iostream>
-#include <fstream>
-#include <conio.h>
+
 
 // Global variables
 bool adventuresPlayed[3] = {false, false, false};
